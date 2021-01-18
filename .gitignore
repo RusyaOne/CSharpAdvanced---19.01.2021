@@ -360,3 +360,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+1.Collections/Topic1Agenda.md
+1.Collections/StackStructure.png
+1.Collections/QueueStructure.png
+1.Collections/LinkedListStructure.png
+1.Collections/HashTableStructure.png
