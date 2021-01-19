@@ -23,6 +23,7 @@ namespace GenericCollections.GenericCollectionExamples
             // на предыдущий и последующий элемент, для итерации необходимо использовать переменную,
             // с помощью которой мы будем помнить какой текущий элемент списка  
             LinkedListNode<string> currentNode = daysOfWeek.First;
+
             while (currentNode != null)
             {
                 Console.WriteLine(currentNode.Value);
@@ -40,8 +41,9 @@ namespace GenericCollections.GenericCollectionExamples
             daysOfWeek.AddAfter(daysOfWeek.Last, "Thursday");
             daysOfWeek.AddAfter(daysOfWeek.Last, "Friday");
 
-            // Удаляем элементы 2 способами
+            // Удаляем элементы 3 способами
             daysOfWeek.Remove(daysOfWeek.First);
+            daysOfWeek.RemoveFirst();
             daysOfWeek.RemoveLast();
 
             LinkedListNode<string> currentNode = daysOfWeek.First;

@@ -9,8 +9,8 @@ namespace Collections.CollectionsExamples
         {
             Queue humsters = new Queue();
 
-            humsters.Enqueue("John");
-            humsters.Enqueue("Carter");
+            humsters.Enqueue(1);
+            humsters.Enqueue(2);
             humsters.Enqueue("Abraham");
             humsters.Enqueue("Gon");
 
@@ -48,12 +48,14 @@ namespace Collections.CollectionsExamples
             humsters.Enqueue("Abraham");
             humsters.Enqueue("Gon");
 
-            var popedHumster = humsters.Peek();
+            var peekedHumster = humsters.Peek();
 
             foreach (var humster in humsters)
             {
                 Console.WriteLine(humster);
             }
+
+            Console.WriteLine(peekedHumster);
         }
     }
 }

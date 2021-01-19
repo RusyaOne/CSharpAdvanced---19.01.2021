@@ -12,7 +12,7 @@ namespace Collections.CollectionsExamples
             openWith.Add("txt", "notepad");
             openWith.Add("doc", "word");
             openWith.Add("vsd", "photoshop");
-            openWith.Add("md", "vsCode");
+            openWith.Add("md", 1);
 
             foreach (var value in openWith.Values)
             {
@@ -89,7 +89,7 @@ namespace Collections.CollectionsExamples
 
         public static void ConstructorInitialization()
         {
-            Hashtable openWith = new Hashtable()
+            Hashtable openWith = new Hashtable
             {
                 { "txt", "notepad" },
                 { "doc", "word" },

@@ -37,6 +37,8 @@ namespace Collections.CollectionsExamples
             {
                 Console.WriteLine(humster);
             }
+
+            //Console.WriteLine(popedHumster);
         }
 
         public static void PeekElement()
@@ -48,7 +50,7 @@ namespace Collections.CollectionsExamples
             humsters.Push("Abraham");
             humsters.Push("Gon");
 
-            var popedHumster = humsters.Peek();
+            var peekedHumster = humsters.Peek();
 
             foreach (var humster in humsters)
             {

@@ -7,7 +7,7 @@ namespace GenericCollections
     {
         static void Main(string[] args)
         {
-            var exampleToRun = Examples.HashSetIntersect;
+            var exampleToRun = Examples.DictionaryCompileTimeError;
 
             switch (exampleToRun)
             {

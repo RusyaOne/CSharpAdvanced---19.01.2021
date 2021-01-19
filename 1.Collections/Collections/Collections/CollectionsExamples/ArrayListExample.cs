@@ -8,6 +8,7 @@ namespace Collections.CollectionsExamples
         public static void ShowArrayList()
         {
             //Данные в элементах ArrayList храняться в виде обьектов
+            //int [] array = new int[5]; //Пример массива
             ArrayList humans = new ArrayList();
                         
             humans.Add("Kurt Cobain");
@@ -66,8 +67,11 @@ namespace Collections.CollectionsExamples
 
             foreach (var human in humans)
             {
-                Console.WriteLine(human);
+                Output(human);
             }
         }
+
+        private static void Output(object human) =>
+            Console.WriteLine(human);
     }
 }
