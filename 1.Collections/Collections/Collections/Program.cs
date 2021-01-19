@@ -8,7 +8,7 @@ namespace Collections
         static void Main(string[] args)
         {
             //Which example to run
-            var exampleToRun = Examples.ArrayListInitialization;
+            var exampleToRun = Examples.HashtableInitialization;
 
             switch (exampleToRun)
             {

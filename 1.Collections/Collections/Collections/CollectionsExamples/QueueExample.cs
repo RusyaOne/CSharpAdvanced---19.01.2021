@@ -14,9 +14,10 @@ namespace Collections.CollectionsExamples
             humsters.Enqueue("Abraham");
             humsters.Enqueue("Gon");
 
-            //Реализация стека в C# позволяет перебирать элементы в цыкле
+            //Реализация очереди в C# позволяет перебирать элементы в цикле
             foreach (var humster in humsters)
             {
+                //Элементы выводятся в том порядке, в котором они бы доставались со очереди
                 Console.WriteLine(humster);
             }
         }

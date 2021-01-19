@@ -27,7 +27,7 @@ namespace GenericCollections.GenericCollectionExamples
 
             if (codes.Contains(2))
             {
-                //Для hashset операция Remove занимает всего О(1), в то время как для лист О(n)
+                //Для hashset операция Contains занимает всего О(1), в то время как для лист О(n)
                 Console.WriteLine("Codes contains 2"); 
             }
 

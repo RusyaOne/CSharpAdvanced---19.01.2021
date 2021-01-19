@@ -38,7 +38,7 @@ namespace GenericCollections.GenericCollectionExamples
 
 
             //Использование Generic коллекции помагает прдупредить ошибку еще на этапе компиляции
-            //Также позволяет проводить действия с элементами без приведения типов, ArrayList требует этого т.к. все его эл. типа object
+            //Также позволяет проводить действия с элементами без приведения типов, ArrayList требует этого т.к. все его элементы типа object
             try
             {
                 Console.WriteLine((int)numbers[0] + (int)numbers[1]);

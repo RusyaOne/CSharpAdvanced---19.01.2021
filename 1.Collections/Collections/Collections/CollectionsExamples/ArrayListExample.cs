@@ -25,7 +25,7 @@ namespace Collections.CollectionsExamples
         {
             ArrayList humans = new ArrayList();
 
-            //При доавлении целочисленного числа происходит упаковка (boxing)
+            //При добавлении целочисленного числа происходит упаковка (boxing)
             humans.Add(1);
             humans.Add(2);
             humans.Add(3);
@@ -33,7 +33,7 @@ namespace Collections.CollectionsExamples
 
             foreach (var human in humans)
             {
-                Console.WriteLine(human); //При выводе числа происходит распаковка (unboxing)
+                Console.WriteLine((int)human); //При выводе числа происходит распаковка (unboxing)
             }
         }
 
