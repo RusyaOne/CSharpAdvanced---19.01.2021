@@ -74,9 +74,9 @@ namespace GenericCollections.GenericCollectionExamples
             rightCodes.Add(4);
 
             //Операция разницы
-            leftCodes.ExceptWith(rightCodes);
+            rightCodes.ExceptWith(leftCodes);
 
-            foreach (var code in leftCodes)
+            foreach (var code in rightCodes)
             {
                 Console.WriteLine(code);
             }

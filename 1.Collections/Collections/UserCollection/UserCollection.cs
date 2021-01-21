@@ -2,38 +2,44 @@
 
 namespace UserCollection
 {
-    class UserCollection : IEnumerable
+    public class UserCollection : IEnumerable
     {
-        public int[] Array { get; set; }
+        private readonly int[] _array;
+
+        public UserCollection(params int[] array)
+        {
+            _array = array;
+        }
+
         public IEnumerator GetEnumerator()
         {
-            return new Iterator(this);
+            return new Iterator(_array);
         }
     }
 
-    class Iterator : IEnumerator
+    public class Iterator : IEnumerator
     {
-        int[] array;
-        public Iterator(UserCollection col)
-        {
-            array = col.Array;
-        }
-
-        int currentPosition = -1;
+        private int[] _array;
+        private int _currentPosition = -1;
 
         public object Current
         {
             get
             {
-                return array[currentPosition];
+                return _array[_currentPosition];
             }
+        }
+
+        public Iterator(int[] array)
+        {
+            _array = array;
         }
 
         public bool MoveNext()
         {
-            if (currentPosition < array.Length - 1)
+            if (_currentPosition < _array.Length - 1)
             {
-                currentPosition++;
+                _currentPosition++;
                 return true;
             }
 
@@ -42,8 +48,7 @@ namespace UserCollection
 
         public void Reset()
         {
-            currentPosition = -1;
+            _currentPosition = -1;
         }
     }
-
 }
