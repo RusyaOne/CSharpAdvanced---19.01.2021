@@ -48,5 +48,36 @@ namespace GenericCollections.GenericCollectionExamples
                 Console.WriteLine(e.Message);
             }
         }
+
+        public static void InitializationSyntaxes()
+        {
+            //Adding elements after initialization
+            Dictionary<string, string> openWith = new Dictionary<string, string>();
+            openWith.Add("txt", "notepad");
+            openWith.Add("doc", "word");
+
+            //Adding elements with initialization
+            Dictionary<string, string> initializedWithValues = new Dictionary<string, string> 
+            {
+                { "txt", "notepad" },
+                { "doc", "word" }
+            };
+
+            //Addin elements with new syntax
+            Dictionary<string, string> initializedWithNewSyntax = new Dictionary<string, string>
+            {
+                ["txt"] = "notepad",
+                ["doc"] = "word" 
+            };
+
+            try
+            {
+                Console.WriteLine((string)openWith["txt"] + (string)openWith["md"]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
     }
 }
