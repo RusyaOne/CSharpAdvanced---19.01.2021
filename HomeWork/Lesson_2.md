@@ -3,6 +3,8 @@
 2. Пересмотрите презентацию по обобщениям.
 3. Про ограничение new(): https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/new-constraint
 4. Про агрегацию и композицию: https://habr.com/ru/post/354046/
+5. В текущей реализицаии С# метод Reset() используется только для COM Ineroperability, т.е. если ваш класс используется только средой .NET - его вам не обязательно реализовывать:
+https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator.reset?redirectedfrom=MSDN&view=net-5.0#System_Collections_IEnumerator_Reset
 
 Практика:
 1. Создайте пользовательскую коллекцию (реализуйте IEnumerable и IEnumerator). Как основу используйте List<T>(выберите тип по своему усмотрению) вместо массива. Добавьте свои методы Add и Remove. Элемент в коллекцию должен добавляться только если он соотвествует типу, укзаному вами в List<T>. Удаляться элемент должен только если коллекция содержит больше 5 элементов.
