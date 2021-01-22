@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleUsagesOfCode", "MultipleUsagesOfCode.csproj", "{4718F201-92FE-4463-9706-253CA6D52549}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeReuse", "CodeReuse.csproj", "{4718F201-92FE-4463-9706-253CA6D52549}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
