@@ -60,6 +60,5 @@ namespace Delegates.DelegatesExamples
 
         public static void CountToThree() =>
             Console.WriteLine("CountToThree");
-
     }
 }

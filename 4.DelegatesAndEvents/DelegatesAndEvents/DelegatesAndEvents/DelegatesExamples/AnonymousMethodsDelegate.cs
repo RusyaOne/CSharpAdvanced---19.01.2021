@@ -14,17 +14,12 @@ namespace Delegates.DelegatesExamples
         {
             MessageDelegate messageDelegate = delegate 
             {
-                var value = SomeMethod();
                 Console.WriteLine("This is anonymous method");
             };
 
             messageDelegate();
         }
 
-        private static int SomeMethod()
-        {
-            return 5;
-        }
 
 
 

@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DelegatesExamples\ActionDelegate.cs" />
     <Compile Include="DelegatesExamples\AnonymousMethodsDelegate.cs" />
     <Compile Include="DelegatesExamples\BasicSyntaxDelegate.cs" />
     <Compile Include="DelegatesExamples\BuildInDelegates.cs" />
