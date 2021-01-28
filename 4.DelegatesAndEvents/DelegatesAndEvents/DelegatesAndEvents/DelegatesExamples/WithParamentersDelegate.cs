@@ -14,9 +14,11 @@ namespace Delegates.DelegatesExamples
         {
             MethodsForDelegates methodsForDelegate = new MethodsForDelegates();
 
+
             CountDelegates countDelegate = methodsForDelegate.Count;
 
-            var cat = countDelegate(5);
+            //Cat cat = countDelegate.Invoke(5);
+            Cat cat = countDelegate(5);
 
             cat.Meow();
         }
@@ -26,9 +28,6 @@ namespace Delegates.DelegatesExamples
     {
         public Cat Count(int cats)
         {
-            //for (int i = 0; i < 5; i++)
-            //    Console.WriteLine(i * 2);
-
             return new Cat(cats);
         }
     }

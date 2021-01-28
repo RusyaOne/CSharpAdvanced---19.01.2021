@@ -7,7 +7,7 @@ namespace Delegates
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.BuildInDelegateAction;
+            var exampleToRun = ExamplesEnumeration.DelegateLambdaExpression;
 
             switch (exampleToRun)
             {

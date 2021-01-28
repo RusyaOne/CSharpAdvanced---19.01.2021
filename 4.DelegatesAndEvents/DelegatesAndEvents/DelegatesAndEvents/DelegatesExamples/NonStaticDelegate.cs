@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Delegates.DelegatesExamples
 {
-    //Удали все и напиши заново. Так будет понятнее
-
     public static class NonStaticDelegate
     {
         public static void ShowNonStaticDelegate()
         {
             MethodsForDelegate methodsForDelegate = new MethodsForDelegate();
 
-            CountDelegate countDelegate = methodsForDelegate.Count;
+
+
+            CountDelegate countDelegate = new CountDelegate(methodsForDelegate.Count);
 
             countDelegate();
         }

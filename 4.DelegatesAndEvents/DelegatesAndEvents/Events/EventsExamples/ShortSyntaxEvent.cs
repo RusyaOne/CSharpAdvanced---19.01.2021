@@ -14,7 +14,10 @@ namespace Events.EventsExamples
 
             //Можно упустить создание экземпляра делегата и подписаться на событие методом
             //Подразумевается что делегат присутсвует, т.к. сигнатура метода совпадает с сигнатурой делегата
+
             sender.ShowMessageEvent += SendMessageHandler;
+
+            sender.InvokeEvent("Short syntax");
         }
 
         private static void SendMessageHandler(string message)

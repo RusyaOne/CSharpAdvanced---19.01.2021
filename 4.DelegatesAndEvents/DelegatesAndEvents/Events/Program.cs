@@ -11,7 +11,7 @@ namespace Events
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.KeyboardEvent;
+            var exampleToRun = ExamplesEnumeration.EventBasicSyntax;
 
             switch (exampleToRun)
             {

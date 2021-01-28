@@ -44,7 +44,15 @@ namespace Events.EventsExamples
         {
             //Делаем проверку что у события есть подписчик
             //и вызываем событие
+
             ShowMessageEvent?.Invoke(a);
+
+            //ShowMessageEvent(a);
+
+            //if (ShowMessageEvent != null)
+            //{
+            //    ShowMessageEvent(a);
+            //}
         }
     }
 }

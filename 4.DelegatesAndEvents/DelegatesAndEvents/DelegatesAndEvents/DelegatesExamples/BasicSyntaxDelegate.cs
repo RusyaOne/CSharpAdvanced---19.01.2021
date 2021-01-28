@@ -6,7 +6,7 @@ namespace Delegates.DelegatesExamples
     {
         //Обьявляем делегат
         //Данный делегат может указывать на любой метод, который имеет возвращемый тип void и не принимает параметров
-        delegate void CountDelegate();
+        public delegate void CountDelegate();
 
         //Обьявляем методы с идентичной делегату сигнатурой
         public static void Count()
@@ -20,14 +20,21 @@ namespace Delegates.DelegatesExamples
             Console.WriteLine("Congratulations! You got discount for 25%");
         }
 
+        public static void ExecuteDelegate(CountDelegate countDelegate)
+        {
+            countDelegate.Invoke();
+        }
+
+
+
 
         public static void ShowDelegate()
         {
             //Передаем ссылку на метод при создании экзмепляра делегата
-            CountDelegate countDelegate = new CountDelegate(Count);
+            CountDelegate countDelegate = new CountDelegate(Discount);
 
             //Вызываем метод на который указывает делегат
-            countDelegate.Invoke();
+            ExecuteDelegate(countDelegate);
         }
     }
 }

@@ -4,11 +4,13 @@ namespace Delegates.DelegatesExamples
 {
     public static class LambdaExpressionDelegate
     {
-
-
         public static void ShowLambdaExpression()
         {
             //Используем лямбда выражение 
+            //MultiplyDelegate multiplyDelegate = delegate (int t)
+            //{
+            //    return t * 2;
+            //};
             MultiplyDelegate multiplyDelegate = t => t * 2;
 
             Console.WriteLine(multiplyDelegate(4));
@@ -30,10 +32,10 @@ namespace Delegates.DelegatesExamples
 
             //Убираем слово return и фигурные скобки, т.к. если выражение не полное 
             //и так подразумевается что должно стоять слово return
-            multiplyDelegate = (x) =>  x * 2 ;
+            multiplyDelegate = (x) => x * 2;
 
             //Если входящий параметр всего один - круглые скобки можно убрать
-            multiplyDelegate = x =>  x * 2;
+            multiplyDelegate = x => x * 2;
 
             Console.WriteLine(multiplyDelegate(6));
         }

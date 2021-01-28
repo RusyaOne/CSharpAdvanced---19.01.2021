@@ -10,8 +10,10 @@ namespace Delegates.DelegatesExamples
     {
         delegate void CombinedDelegate();
 
-        public static void CountToOne() =>
+        public static void CountToOne()
+        {
             Console.WriteLine("CountToOne");
+        }
 
         public static void CountToTwo() =>
             Console.WriteLine("CountToTwo");
@@ -47,8 +49,9 @@ namespace Delegates.DelegatesExamples
                         combinedDelegate();
                         break;
                     case "4":
-                        CombinedDelegate combinedDelegateOneThree = combinedDelegate - countDelegateTwo;
-                        combinedDelegateOneThree();
+                        //combinedDelegate = combinedDelegate - countDelegateTwo;
+                        combinedDelegate -= countDelegateTwo;
+                        combinedDelegate();
                         break;
                     case "5":
                         CombinedDelegate combinedDelegateTwoThree = combinedDelegate - countDelegateOne;

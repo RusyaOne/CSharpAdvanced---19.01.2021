@@ -18,8 +18,9 @@ namespace Delegates.DelegatesExamples
         public static void ShowShortSyntax()
         {
             //Вместо явного создания экземпляра делегата мы присваиваем ссылку на метод переменной делегата
-            MessageDelegate messageDelegate = ShowMessage; 
-            
+            //MessageDelegate messageDelegate = new MessageDelegate(ShowMessage); 
+            MessageDelegate messageDelegate = ShowMessage;
+
             //Также мы можем упустить метод Invoke и вызвать метод, на который указывает делегат, следующим образом:
             messageDelegate();
         }
