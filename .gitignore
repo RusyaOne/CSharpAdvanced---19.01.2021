@@ -361,19 +361,22 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
+TODO.md
+Roaster.md
+
 1.Collections/Topic1Agenda.md
 1.Collections/StackStructure.png
 1.Collections/QueueStructure.png
 1.Collections/LinkedListStructure.png
 1.Collections/HashTableStructure.png
+1.Collections/Topic1Questions.md
 
 2.Generics/Topic2Agenda.md
+2.Generics/Topic2Questions.md
 
-TODO.md
-Roaster.md
 3.VersionControl/Topic3Agenda.md
-1.Collections/Topic1Questions.md
+
 4.DelegatesAndEvents/LambdaExpressionEvolution.png
 4.DelegatesAndEvents/Topic4Agenda.md
-2.Generics/Topic2Questions.md
+
 BeforeLessonQuestions/Lesson3Questions.md
