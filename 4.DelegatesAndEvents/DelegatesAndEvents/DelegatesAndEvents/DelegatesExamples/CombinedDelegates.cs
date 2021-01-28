@@ -10,6 +10,15 @@ namespace Delegates.DelegatesExamples
     {
         delegate void CombinedDelegate();
 
+        public static void CountToOne() =>
+            Console.WriteLine("CountToOne");
+
+        public static void CountToTwo() =>
+            Console.WriteLine("CountToTwo");
+
+        public static void CountToThree() =>
+            Console.WriteLine("CountToThree");
+
         public static void ShowCombinedDelegate()
         {
             //Создаем несколько экземпляров делегата типа CombinedDelegate
@@ -51,14 +60,5 @@ namespace Delegates.DelegatesExamples
                 }
             }
         }
-
-        public static void CountToOne() =>        
-            Console.WriteLine("CountToOne");
-
-        public static void CountToTwo() =>
-            Console.WriteLine("CountToTwo");
-
-        public static void CountToThree() =>
-            Console.WriteLine("CountToThree");
     }
 }
