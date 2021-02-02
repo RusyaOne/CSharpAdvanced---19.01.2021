@@ -7,7 +7,7 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.GroupByInto;
+            var exampleToRun = ExamplesEnumeration.ShowExplicitSelect;
 
             switch (exampleToRun)
             {

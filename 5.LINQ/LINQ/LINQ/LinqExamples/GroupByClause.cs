@@ -29,7 +29,7 @@ namespace LINQ.LinqExamples
                     Console.WriteLine(person.ToString());
         }
 
-        //Напишите запрос LINQ в котором сгрупируйте персонажей по возрасту
+        //Напишите запрос LINQ в котором сгруппируйте персонажей по возрасту
         //выведите группы в которых больше одного персонажа
 
         public static void GroupByInto()

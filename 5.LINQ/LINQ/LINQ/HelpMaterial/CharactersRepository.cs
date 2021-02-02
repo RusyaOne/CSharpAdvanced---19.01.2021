@@ -10,7 +10,7 @@ namespace LINQ.HelpMaterial
 
             persons.Add(new Character("Finn", "Mertens", true, 14));
             persons.Add(new Character("Philip", "Fry", true, 25));
-            persons.Add(new Character("Arven", "Menethil", false, 2700));
+            persons.Add(new Character("Arwen", "Menethil", false, 2700));
             persons.Add(new Character("Audrey", "Hepburn", false, 29));
             persons.Add(new Character("John", "Wick", true, 42));
             persons.Add(new Character("Anakin", "Skywalker", true, 29));

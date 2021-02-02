@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LINQ.HelpMaterial;
+using System;
 
 namespace LINQ.LinqExamples
 {
