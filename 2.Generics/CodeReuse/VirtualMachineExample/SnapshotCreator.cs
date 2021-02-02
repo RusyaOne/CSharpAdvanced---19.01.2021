@@ -1,4 +1,4 @@
-﻿namespace MultipleUsagesOfCode.Examples
+﻿namespace CodeReuse.VirtualMachineExample
 {
     public class SnapshotCreator<T> where T: IResource
     {

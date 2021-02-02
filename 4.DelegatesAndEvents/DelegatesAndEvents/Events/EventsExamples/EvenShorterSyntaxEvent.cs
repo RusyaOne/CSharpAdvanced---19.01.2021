@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Events.EventsExamples
 {
-    class EvenShorterSyntaxEvent
+    public static class EvenShorterSyntaxEvent
     {
         //А теперь напишите сами свое событие при этом его обработчиком должен быть анонимный метод
     }
