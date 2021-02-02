@@ -1,5 +1,6 @@
 ﻿using CodeReuse.CustomerGenericExample;
 using CodeReuse.UserAbstractionExample;
+using System.Collections.Generic;
 
 namespace MultipleUsagesOfCode
 {
@@ -27,7 +28,6 @@ namespace MultipleUsagesOfCode
                 }
             };
 
-
             //Customer abstraction example
             //Например, если выбрана лиценция обычного пользователя открывается форма c полями для CommonUser
             CommonUser commonUser = new CommonUser
@@ -45,6 +45,10 @@ namespace MultipleUsagesOfCode
                 LastName = "Anderson",
                 PremiumCarNumber = 1
             };
+
+            List<IUser> users = new List<IUser>();
+            users.Add(commonUser);
+            users.Add(premiumUser);
         }
     }
 }

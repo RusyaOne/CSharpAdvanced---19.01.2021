@@ -15,6 +15,7 @@
         BuildInDelegateGenericAction,
         BuildInDelegateFunction,
         BuildInDelegatePredicate,
-        CallbackShow
+        CallbackShow,
+        CuratorAgentExampleShow,
     }
 }

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Events\Events.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticVsNotStatic", "StaticVsNotStatic\StaticVsNotStatic.csproj", "{90AC6F83-8AF4-4D4A-878B-4E219CE583FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformEventsExample", "WinformEventsExample\WinformEventsExample.csproj", "{247320B0-8F7D-4238-AEFE-99E38AC63353}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformEventsExample", "WinformEventsExample\WinformEventsExample.csproj", "{719FE144-6597-4DB9-B932-6CC77589017C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{90AC6F83-8AF4-4D4A-878B-4E219CE583FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90AC6F83-8AF4-4D4A-878B-4E219CE583FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90AC6F83-8AF4-4D4A-878B-4E219CE583FF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{247320B0-8F7D-4238-AEFE-99E38AC63353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{247320B0-8F7D-4238-AEFE-99E38AC63353}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{247320B0-8F7D-4238-AEFE-99E38AC63353}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{247320B0-8F7D-4238-AEFE-99E38AC63353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719FE144-6597-4DB9-B932-6CC77589017C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719FE144-6597-4DB9-B932-6CC77589017C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719FE144-6597-4DB9-B932-6CC77589017C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719FE144-6597-4DB9-B932-6CC77589017C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

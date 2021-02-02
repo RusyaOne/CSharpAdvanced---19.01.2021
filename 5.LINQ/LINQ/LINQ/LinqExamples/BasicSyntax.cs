@@ -30,6 +30,16 @@ namespace LINQ.LinqExamples
                 Console.WriteLine(adult.ToString());            
         }
 
-        //Самостоятельно сделать запрос Linq для отбора персонажей длинна имени которых равна длинне фамилии
+        public static void SelectCharactersWithSameFirstAndLastNameLenth()
+        {
+            var characters = CharactersRepository.GetCharacters();
+
+            var adults = from character in characters
+                         where character.FirstName.Length == character.LastName.Length
+                         select character;
+
+            foreach (var adult in adults)
+                Console.WriteLine(adult.ToString());
+        }
     }
 }

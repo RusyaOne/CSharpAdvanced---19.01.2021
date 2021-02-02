@@ -52,6 +52,7 @@
     <Compile Include="DelegatesExamples\LambdaExpressionDelegate.cs" />
     <Compile Include="DelegatesExamples\NonStaticDelegate.cs" />
     <Compile Include="DelegatesExamples\ShortSyntaxDelegate.cs" />
+    <Compile Include="DelegatesExamples\CuratorAgentExample.cs" />
     <Compile Include="DelegatesExamples\WithParamentersDelegate.cs" />
     <Compile Include="ExamplesEnumeration.cs" />
     <Compile Include="Program.cs" />

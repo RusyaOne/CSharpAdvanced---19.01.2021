@@ -1,5 +1,6 @@
 ﻿using LINQ.HelpMaterial;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace LINQ.LinqExamples
@@ -8,9 +9,13 @@ namespace LINQ.LinqExamples
     {
         public static void ShowExtensionMethodSyntax()
         {
-            var characters = CharactersRepository.GetCharacters();
+            List<Character> characters = CharactersRepository.GetCharacters();
 
             var adults = characters.Where(character => character.Age > 20);
+
+            //var adults = from character in characters
+            //             where character.Age > 20
+            //             select character;
 
             foreach (var adult in adults)            
                 Console.WriteLine(adult.ToString());            
@@ -18,7 +23,7 @@ namespace LINQ.LinqExamples
 
         public static void DefferedExecution()
         {
-            var characters = CharactersRepository.GetCharacters();
+            List<Character> characters = CharactersRepository.GetCharacters();
 
             var adults = characters.Where(character => character.FirstName.StartsWith("A"));
 

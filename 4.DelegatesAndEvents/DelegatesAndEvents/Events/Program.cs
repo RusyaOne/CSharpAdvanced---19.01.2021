@@ -11,7 +11,7 @@ namespace Events
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.EventBasicSyntax;
+            var exampleToRun = ExamplesEnumeration.KeyboardEvent;
 
             switch (exampleToRun)
             {
@@ -22,7 +22,7 @@ namespace Events
                     ShortSyntaxEvent.ShowShortSyntaxEvent();
                     break;
                 case ExamplesEnumeration.EvenShorterSyntax:
-                    //EvenShorterSyntaxEvent.ShowEvent();
+                    EvenShorterSyntaxEvent.ShowEvent();
                     break;
                 case ExamplesEnumeration.KeyboardEvent:
                     KeyboardEvent.SpectateKeyboard();

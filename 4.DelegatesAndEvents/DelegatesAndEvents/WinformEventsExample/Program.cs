@@ -1,4 +1,7 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WinformEventsExample
@@ -11,12 +14,10 @@ namespace WinformEventsExample
         [STAThread]
         static void Main()
         {
-            IUserManager userManager = new UserManager();
-
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CreateUserForm(userManager));
+            Application.Run(new CustomerForm());
         }
     }
 }

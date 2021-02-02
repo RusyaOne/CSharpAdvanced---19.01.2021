@@ -17,7 +17,7 @@
 
         public override string ToString()
         {
-            return $"FirstName: {FirstName}, \tLastnName: {LastName}, \tGender: {Gender}, \tAge: {Age}";
+            return $"FirstName: {FirstName}, \tLastName: {LastName},  \tGender: {Gender}, \tAge: {Age}";
         }
     }
 }

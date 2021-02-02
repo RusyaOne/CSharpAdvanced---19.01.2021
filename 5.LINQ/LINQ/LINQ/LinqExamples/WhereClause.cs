@@ -11,8 +11,7 @@ namespace LINQ.LinqExamples
             var characters = CharactersRepository.GetCharacters();
 
             var persons = from character in characters
-                          where character.FirstName.StartsWith("A") && 
-                                !character.LastName.StartsWith("S")
+                          where character.FirstName.StartsWith("A") && !character.LastName.StartsWith("S")
                           select character;
 
             foreach (var person in persons)            
@@ -23,10 +22,22 @@ namespace LINQ.LinqExamples
         {
             var characters = CharactersRepository.GetCharacters();
 
-            var persons = characters.Where(x => x.FirstName.StartsWith("A") || x.LastName.Length == 5);
+            var persons = characters.Where(character => character.FirstName.StartsWith("A") || character.LastName.Length == 5);
 
             foreach (var person in persons)           
                 Console.WriteLine(person.ToString());            
+        }
+
+        public static void ShowWhereWithMultipleBoolOperands()
+        {
+            var characters = CharactersRepository.GetCharacters();
+
+            var persons = characters.Where(character =>
+                (character.FirstName.StartsWith("A") || character.LastName.Length == 5)
+                && character.LastName == "Wrynn");
+
+            foreach (var person in persons)
+                Console.WriteLine(person.ToString());
         }
 
         //Напишите сами LINQ запрос с оператором Where,

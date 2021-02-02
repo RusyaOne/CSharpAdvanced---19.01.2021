@@ -7,7 +7,7 @@ namespace Delegates
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.DelegateLambdaExpression;
+            var exampleToRun = ExamplesEnumeration.CuratorAgentExampleShow;
 
             switch (exampleToRun)
             {
@@ -52,6 +52,9 @@ namespace Delegates
                     break;
                 case ExamplesEnumeration.CallbackShow:
                     CallbackExample.UseCallback();
+                    break;
+                case ExamplesEnumeration.CuratorAgentExampleShow:
+                    Curator.SendAgentForMission();
                     break;
             }
 

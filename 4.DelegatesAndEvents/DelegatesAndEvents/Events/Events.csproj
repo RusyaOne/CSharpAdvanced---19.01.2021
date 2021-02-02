@@ -46,6 +46,7 @@
     <Compile Include="EventsExamples\BasicSyntaxEvent.cs" />
     <Compile Include="EventsExamples\EvenShorterSyntaxEvent.cs" />
     <Compile Include="EventsExamples\KeyboardEvent.cs" />
+    <Compile Include="EventsExamples\MessageSender.cs" />
     <Compile Include="EventsExamples\ShortSyntaxEvent.cs" />
     <Compile Include="ExamplesEnumeration.cs" />
     <Compile Include="Program.cs" />

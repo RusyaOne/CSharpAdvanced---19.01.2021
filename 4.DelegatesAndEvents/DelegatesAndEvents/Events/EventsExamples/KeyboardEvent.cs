@@ -11,22 +11,21 @@ namespace Events.EventsExamples
             keyboard.PressKeyXEvent += PressXHandler;
             keyboard.PressKeyYEvent += PressYHandler;
 
-            //keyboard.PressKeyXEvent -= PressXHandler;
+            keyboard.PressKeyXEvent -= PressXHandler;
 
             keyboard.StartSpectate();
         }
 
         private static void PressXHandler()
         {
-            Console.WriteLine("'x' letter have been pressed");
+            Console.WriteLine("'x' letter has been pressed");
         }
 
         private static void PressYHandler()
         {
-            Console.WriteLine("'y' letter have been pressed");
+            Console.WriteLine("'y' letter has been pressed");
         }
     }
-
 
 
     public delegate void PressKeyHandler();

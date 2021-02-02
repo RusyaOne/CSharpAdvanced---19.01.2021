@@ -11,7 +11,7 @@ namespace LINQ.LinqExamples
             var characters = CharactersRepository.GetCharacters();
 
             var adults = from character in characters
-                         orderby character.FirstName 
+                         orderby character.FirstName descending
                          select character;
 
             foreach (var adult in adults)
