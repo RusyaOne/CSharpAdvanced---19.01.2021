@@ -37,8 +37,8 @@ namespace ConnectToDB.Examples
                 {
                     while (sqlReader.Read())
                     {
-                        Console.WriteLine($"FirstName: {sqlReader[0].ToString()}, \tLastName: {sqlReader[1].ToString()}," +
-                            $"  \tGender: {sqlReader[2].ToString()}, \tAge: {sqlReader[3].ToString()}");
+                        Console.WriteLine($"FirstName: {sqlReader[0]}, \tLastName: {sqlReader[1]}," +
+                            $"  \tGender: {sqlReader[2]}, \tAge: {sqlReader[3]}");
                     }
                 }                
             }

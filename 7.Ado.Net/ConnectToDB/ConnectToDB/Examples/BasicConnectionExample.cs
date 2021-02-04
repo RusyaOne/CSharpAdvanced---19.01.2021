@@ -12,6 +12,8 @@ namespace ConnectToDB.Examples
                     Initial Catalog = CSharpAdvanced;
                     Integrated Security = SSPI;";
 
+            //"Server=UKR-RUSLANAN;Database=Infestation;Trusted_Connection=True;"
+
             try
             {
                 connection.Open();
@@ -55,6 +57,7 @@ namespace ConnectToDB.Examples
             connection.ConnectionString = @"Data Source = UKR-RUSLANAN; 
                     Initial Catalog = CSharpAdvanced;
                     Integrated Security = SSPI;";
+
             SqlCommand command = new SqlCommand(queryString, connection);
 
             try
