@@ -7,7 +7,7 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.GroupByBasicSyntax;
+            var exampleToRun = ExamplesEnumeration.JoinWithExtensionMethodsSyntax;
 
             switch (exampleToRun)
             {
@@ -61,6 +61,12 @@ namespace LINQ
                     break;
                 case ExamplesEnumeration.DynamicTypes:
                     DynamicTypes.ShowDynamicTypes();
+                    break;
+                case ExamplesEnumeration.JoinWithQuerySyntax:
+                    JoinClause.ShowJoinWithQuerySyntax();
+                    break;
+                case ExamplesEnumeration.JoinWithExtensionMethodsSyntax:
+                    JoinClause.ShowJoinWithExtensionMethodsSyntax();
                     break;
             }
 

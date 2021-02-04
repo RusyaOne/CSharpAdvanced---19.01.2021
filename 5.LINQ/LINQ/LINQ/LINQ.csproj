@@ -46,8 +46,11 @@
     <Compile Include="ExamplesEnumeration.cs" />
     <Compile Include="HelpMaterial\Character.cs" />
     <Compile Include="HelpMaterial\CharactersRepository.cs" />
+    <Compile Include="HelpMaterial\Story.cs" />
+    <Compile Include="HelpMaterial\StoriesRepository.cs" />
     <Compile Include="LinqExamples\AnonymousTypes.cs" />
     <Compile Include="LinqExamples\BasicSyntax.cs" />
+    <Compile Include="LinqExamples\JoinClause.cs" />
     <Compile Include="LinqExamples\DynamicTypes.cs" />
     <Compile Include="LinqExamples\ExplicitSelectClause.cs" />
     <Compile Include="LinqExamples\ExtensionMethodSyntax.cs" />

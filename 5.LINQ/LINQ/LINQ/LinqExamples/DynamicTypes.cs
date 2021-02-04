@@ -19,7 +19,7 @@ namespace LINQ.LinqExamples
 
             Console.WriteLine(everything);
 
-            everything = new Character("Saitama", null, true, 19);
+            everything = new Character("Saitama", null, true, 19, 3);
 
             Console.WriteLine(everything.ToString());
         }

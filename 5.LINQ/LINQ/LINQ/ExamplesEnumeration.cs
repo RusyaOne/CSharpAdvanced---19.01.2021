@@ -18,6 +18,8 @@
         AnonymousTypesPropertyNamesInheritance,
         ExplicitSelectClause,
         ExplicitSelectAnonymousType,
-        DynamicTypes
+        DynamicTypes,
+        JoinWithQuerySyntax,
+        JoinWithExtensionMethodsSyntax,
     }
 }

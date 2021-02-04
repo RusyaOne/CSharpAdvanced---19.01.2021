@@ -9,7 +9,7 @@ namespace LINQ.LinqExamples
     {
         public static void ShowExtensionMethodSyntax()
         {
-            List<Character> characters = CharactersRepository.GetCharacters();
+            var characters = CharactersRepository.GetCharacters();
 
             var adults = characters.Where(character => character.Age > 20);
 
@@ -23,11 +23,11 @@ namespace LINQ.LinqExamples
 
         public static void DefferedExecution()
         {
-            List<Character> characters = CharactersRepository.GetCharacters();
+            var characters = CharactersRepository.GetCharacters().ToList();
 
             var adults = characters.Where(character => character.FirstName.StartsWith("A"));
 
-            characters.Add(new Character("Andrew", "Harlan", true, 37));
+            characters.Add(new Character("Andrew", "Harlan", true, 37, 2));
 
             //Запрос выполняется в момент его использования
             foreach (var adult in adults)
