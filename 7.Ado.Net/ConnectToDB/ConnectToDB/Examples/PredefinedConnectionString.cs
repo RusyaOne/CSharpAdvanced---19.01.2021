@@ -12,7 +12,7 @@ namespace ConnectToDB.Examples
                    
             using (SqlConnection connection = new SqlConnection())
             {
-                connection.ConnectionString = ConfigurationManager.ConnectionStrings["AdvanceCSharpCS"].ToString();
+                connection.ConnectionString = ConfigurationManager.ConnectionStrings["AdvanceCSharpCS"].ConnectionString;
                 SqlCommand command = new SqlCommand(queryString, connection);
                 connection.Open();
                 command.ExecuteNonQuery();

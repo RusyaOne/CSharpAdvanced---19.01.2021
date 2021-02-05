@@ -8,11 +8,7 @@ namespace ConnectToDB.Examples
         public static void ShowBasicSyntaxConnection()
         {
             SqlConnection connection = new SqlConnection();
-            connection.ConnectionString = @"Data Source = UKR-RUSLANAN; 
-                    Initial Catalog = CSharpAdvanced;
-                    Integrated Security = SSPI;";
-
-            //"Server=UKR-RUSLANAN;Database=Infestation;Trusted_Connection=True;"
+            connection.ConnectionString = "Server = UKR-RUSLANAN; Database = CSharpAdvanced; Trusted_Connection = True;";
 
             try
             {
@@ -27,8 +23,8 @@ namespace ConnectToDB.Examples
 
         public static void InsertCharacter()
         {
-            string queryString = @"insert into Characters ([FirstName], [LastName],
-                                [Gender], [Age]) values ('Harry', 'Seldon', 1, 50)";
+            string queryString = @"insert into Characters ([FirstName], [LastName], [Gender], [Age]) 
+                                   values ('Harry', 'Seldon', 1, 50)";
 
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = @"Data Source = UKR-RUSLANAN; 
@@ -69,7 +65,7 @@ namespace ConnectToDB.Examples
                 {
                     while (sqlReader.Read())
                     {
-                        Console.WriteLine(sqlReader[1].ToString());
+                        Console.WriteLine(sqlReader["LastName"].ToString());
                     }
                 }
                 finally

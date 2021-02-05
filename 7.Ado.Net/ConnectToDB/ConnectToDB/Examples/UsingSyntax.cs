@@ -9,11 +9,11 @@ namespace ConnectToDB.Examples
         {
             var queryString = @"delete from Characters where FirstName = 'Harry'";
 
-            using (SqlConnection connection = new SqlConnection())
+            string connectionString = 
+                @"Server = UKR-RUSLANAN; Database = CSharpAdvanced; Trusted_Connection = True;";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                connection.ConnectionString = @"Data Source = UKR-RUSLANAN; 
-                    Initial Catalog = CSharpAdvanced;
-                    Integrated Security = SSPI;";
                 SqlCommand command = new SqlCommand(queryString, connection);
                 connection.Open();
                 var rows = command.ExecuteNonQuery();
@@ -25,11 +25,11 @@ namespace ConnectToDB.Examples
         {
             var queryString = @"select * from Characters";
 
-            using (SqlConnection connection = new SqlConnection())
+            string connectionString =
+                @"Server = UKR-RUSLANAN; Database = CSharpAdvanced; Trusted_Connection = True;";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                connection.ConnectionString = @"Data Source = UKR-RUSLANAN; 
-                    Initial Catalog = CSharpAdvanced;
-                    Integrated Security = SSPI;";
                 SqlCommand command = new SqlCommand(queryString, connection);
                 connection.Open();
                 
