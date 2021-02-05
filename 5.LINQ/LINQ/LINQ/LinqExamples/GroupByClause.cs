@@ -14,8 +14,8 @@ namespace LINQ.LinqExamples
                          group character by character.Gender;
 
             foreach (var group in groups)
-                foreach (var person in group)
-                    Console.WriteLine(person.ToString());
+                foreach (var character in group)
+                    Console.WriteLine(character.ToString());
         }
 
         public static void GroupByExtensionSyntax()
@@ -37,9 +37,9 @@ namespace LINQ.LinqExamples
             var characters = CharactersRepository.GetCharacters();
 
             var groups = from character in characters
-                       group character by character.Age into ageGroups
-                       where ageGroups.Count() > 1
-                       select ageGroups;
+                         group character by character.Age into ageGroups
+                         where ageGroups.Count() > 1
+                         select ageGroups;
 
             //var groups = characters.GroupBy(x => x.Age).Where(group => group.Count() > 1);
 

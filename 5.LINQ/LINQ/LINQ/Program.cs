@@ -7,7 +7,7 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.JoinWithExtensionMethodsSyntax;
+            var exampleToRun = ExamplesEnumeration.LeftJoinExtensionMethodsSyntax;
 
             switch (exampleToRun)
             {
@@ -66,7 +66,19 @@ namespace LINQ
                     JoinClause.ShowJoinWithQuerySyntax();
                     break;
                 case ExamplesEnumeration.JoinWithExtensionMethodsSyntax:
-                    JoinClause.ShowJoinWithExtensionMethodsSyntax();
+                    JoinClause.ShowJoinByMultipleFieldsWithTuple();
+                    break;
+                case ExamplesEnumeration.JoinByMultipleFields:
+                    JoinClause.ShowJoinByMultipleFields();
+                    break;
+                case ExamplesEnumeration.JoinByMultipleFieldsWithTuple:
+                    JoinClause.ShowJoinByMultipleFieldsWithTuple();
+                    break;
+                case ExamplesEnumeration.LeftJoinQuerySyntax:
+                    JoinClause.ShowLeftJoinQuerySyntax();
+                    break;
+                case ExamplesEnumeration.LeftJoinExtensionMethodsSyntax:
+                    JoinClause.ShowLeftJoinExtensionMethodsSyntax();
                     break;
             }
 

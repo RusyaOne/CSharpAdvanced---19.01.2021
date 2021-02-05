@@ -23,14 +23,14 @@ namespace LINQ.LinqExamples
         {
             var characters = CharactersRepository.GetCharacters();
 
-            var persons = from character in characters
-                          select new
-                          {
-                              character.FirstName,
-                              character.Age
-                          };
+            //var persons = from character in characters
+            //              select new
+            //              {
+            //                  character.FirstName,
+            //                  character.Age
+            //              };
 
-            //var persons = characters.Select(x => new { x.FirstName, x.Age });
+            var persons = characters.Select(character => new { character.FirstName, character.Age });
 
             foreach (var person in persons)
                 Console.WriteLine($"FirstName: {person.FirstName}, \tAge: {person.Age}");

@@ -27,7 +27,7 @@ namespace LINQ.LinqExamples
 
             var adults = characters.Where(character => character.FirstName.StartsWith("A"));
 
-            characters.Add(new Character("Andrew", "Harlan", true, 37, 2));
+            characters.Add(new Character("Andrew", "Harlan", true, 37, 2, "Foundation"));
 
             //Запрос выполняется в момент его использования
             foreach (var adult in adults)

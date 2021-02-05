@@ -21,5 +21,9 @@
         DynamicTypes,
         JoinWithQuerySyntax,
         JoinWithExtensionMethodsSyntax,
+        JoinByMultipleFields,
+        JoinByMultipleFieldsWithTuple,
+        LeftJoinQuerySyntax,
+        LeftJoinExtensionMethodsSyntax
     }
 }

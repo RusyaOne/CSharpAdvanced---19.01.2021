@@ -8,9 +8,9 @@ namespace LINQ.HelpMaterial
         {
             var stories = new List<Story>();
 
-            stories.Add(new Story(1, "Fairy tail of the lost needle"));
-            stories.Add(new Story(2, "Foundation"));
-            stories.Add(new Story(3, "Cool story, Bob"));
+            stories.Add(new Story(1, "Fairytail of the lost needle", "None"));
+            stories.Add(new Story(2, "Foundation", "None"));
+            stories.Add(new Story(3, "Cool story, Bob", "None"));
 
             return stories;
         }
