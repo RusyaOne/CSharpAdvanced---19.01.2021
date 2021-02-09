@@ -8,5 +8,9 @@
         DeleteCharacterWithUsing,
         SelectCharactersWithUsing,
         UpdateCharactersWithPredefinedCS,
+        ShowParametersInCommand,
+        ShowMultipleParaters,
+        ShowParatersType,
+        ShowTransaction,
     }
 }

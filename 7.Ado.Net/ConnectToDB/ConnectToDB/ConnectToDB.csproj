@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="ExamplesEnumeration.cs" />
     <Compile Include="Examples\BasicConnectionExample.cs" />
+    <Compile Include="Examples\CommandWithParameters.cs" />
+    <Compile Include="Examples\CommandWithTransaction.cs" />
     <Compile Include="Examples\PredefinedConnectionString.cs" />
     <Compile Include="Examples\UsingSyntax.cs" />
     <Compile Include="Program.cs" />

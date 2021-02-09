@@ -7,7 +7,7 @@ namespace ConnectToDB
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.SelectCharactersWithUsing;
+            var exampleToRun = ExamplesEnumeration.ShowTransaction;
 
             switch (exampleToRun)
             {
@@ -29,9 +29,19 @@ namespace ConnectToDB
                 case ExamplesEnumeration.UpdateCharactersWithPredefinedCS:
                     PredefinedConnectionString.UpdateCharacter();
                     break;
+                case ExamplesEnumeration.ShowParametersInCommand:
+                    CommandWithParameters.ShowParameter();
+                    break;
+                case ExamplesEnumeration.ShowMultipleParaters:
+                    CommandWithParameters.MultipleParameters();
+                    break;
+                case ExamplesEnumeration.ShowParatersType:
+                    CommandWithParameters.SpecifyParameterType();
+                    break;
+                case ExamplesEnumeration.ShowTransaction:
+                    CommandWithTransaction.ShowTransaction();
+                    break;
             }
-
-            Console.Read();
         }
     }
 }
