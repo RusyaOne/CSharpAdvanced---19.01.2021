@@ -40,7 +40,7 @@ namespace IO.IoExamples
 
             if (directory.Exists)
             {
-                //Создание субкаталога
+                //Создание подкаталога
                 directory.CreateSubdirectory("SubDirectory");
 
                 //Рекурсивное создание подкаталога
@@ -57,17 +57,17 @@ namespace IO.IoExamples
             if (directory.Exists)
             {
                 //Удаление каталога
-                try
-                {
-                    directory.Delete();
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                }
+                //try
+                //{
+                //    directory.Delete();
+                //}
+                //catch (Exception e)
+                //{
+                //    Console.WriteLine(e);
+                //}
 
                 //Удаление каталога рекурсивно
-                //directory.Delete(true);
+                directory.Delete(true);
 
                 Console.WriteLine("Directories are deleted");
             }

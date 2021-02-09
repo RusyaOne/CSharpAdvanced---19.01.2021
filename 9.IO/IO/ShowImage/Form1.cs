@@ -20,7 +20,7 @@ namespace ShowImage
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (var stream = new FileStream(@"D:\Courses\CSharpProfessional\9.IO\BlueRose.jpeg", FileMode.Open))
+            using (var stream = new FileStream(@"D:\Courses\CSharpAdvanced - 19.01.2021\9.IO\BlueRose.jpeg", FileMode.Open))
             {
                 pictureBox1.Image = Image.FromStream(stream);
             }
