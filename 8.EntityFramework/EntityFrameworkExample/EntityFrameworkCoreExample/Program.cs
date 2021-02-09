@@ -7,7 +7,7 @@ namespace EntityFrameworkCoreExample
     {
         static void Main(string[] args)
         {            
-            var exampleToRun = ExamplesEnumeration.AddCharactersToDb;
+            var exampleToRun = ExamplesEnumeration.DeleteCharacter;
 
             switch (exampleToRun)
             {

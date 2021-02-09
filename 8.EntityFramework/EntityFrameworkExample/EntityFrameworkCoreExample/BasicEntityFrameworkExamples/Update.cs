@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 
 namespace EntityFrameworkCoreExample.BasicEntityFrameworkExamples
@@ -14,13 +15,11 @@ namespace EntityFrameworkCoreExample.BasicEntityFrameworkExamples
             character.LastName = "Riddle";
             character.Gender = true;
             character.Age = 17;
-            //dbContext.Entry(character).State = EntityState.Modified;
 
-            dbContext.SaveChanges();
+            //dbContext.SaveChanges();
             Console.WriteLine("Character updated");
         }
 
         //Самостоятельно измените имя первого персонажа, 
-        //воссоздайте ситуацию когда персонаж будет отслеживаться в другом контексте
     }
 }

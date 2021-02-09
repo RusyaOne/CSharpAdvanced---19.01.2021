@@ -1,16 +1,16 @@
 ﻿using EntityFrameworkCoreExample.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Configuration;
 
 namespace EntityFrameworkCoreExample
 {
     public class CSharpAdvancedContext : DbContext
     {
         public DbSet<Character> Characters { get; set; }
+        public DbSet<Story> Stories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["CSharpAdvancedContext"].ConnectionString);
+            optionsBuilder.UseSqlServer("Server=UKR-RUSLANAN;Database=CSharpAdvanced;Trusted_Connection=SSPI");
         }
     }
 }

@@ -3,12 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkNavigationProperties", "EntityFrameworkNavigationProperties\EntityFrameworkNavigationProperties.csproj", "{498C6ABE-4168-4220-B91E-B60200491445}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToSqlExample", "LinqToSqlExample\LinqToSqlExample.csproj", "{1518063D-1F41-4AD5-AB58-744F1688C937}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkLesson", "EntityFrameworkLesson\EntityFrameworkLesson.csproj", "{2C39799F-441D-40BF-8BD7-A20C706E5E0C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreExample", "EntityFrameworkCoreExample\EntityFrameworkCoreExample.csproj", "{CC938CD6-E0F7-49CE-A10B-4A7EDE19CD17}"
 EndProject
 Global
@@ -17,18 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{498C6ABE-4168-4220-B91E-B60200491445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{498C6ABE-4168-4220-B91E-B60200491445}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{498C6ABE-4168-4220-B91E-B60200491445}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{498C6ABE-4168-4220-B91E-B60200491445}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1518063D-1F41-4AD5-AB58-744F1688C937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1518063D-1F41-4AD5-AB58-744F1688C937}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1518063D-1F41-4AD5-AB58-744F1688C937}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1518063D-1F41-4AD5-AB58-744F1688C937}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C39799F-441D-40BF-8BD7-A20C706E5E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C39799F-441D-40BF-8BD7-A20C706E5E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C39799F-441D-40BF-8BD7-A20C706E5E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C39799F-441D-40BF-8BD7-A20C706E5E0C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CC938CD6-E0F7-49CE-A10B-4A7EDE19CD17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CC938CD6-E0F7-49CE-A10B-4A7EDE19CD17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC938CD6-E0F7-49CE-A10B-4A7EDE19CD17}.Release|Any CPU.ActiveCfg = Release|Any CPU
