@@ -9,6 +9,7 @@
         SelectCharactersWithUsing,
         UpdateCharactersWithPredefinedCS,
         ShowParametersInCommand,
+        ShowNullParameters,
         ShowMultipleParaters,
         ShowParatersType,
         ShowTransaction,

@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -8,7 +9,7 @@ namespace ConnectToDB.Examples
     {
         public static void ShowParameter()
         {
-            var sqlExpression = @"update Characters set LastName = 'Bubblegum' where FirstName = @firstName";
+            var sqlExpression = @"update Characters set LastName = 'Wasted' where FirstName = @firstName";
 
             var connectionString = ConfigurationManager.ConnectionStrings["AdvanceCSharpCS"].ConnectionString;
 
@@ -21,6 +22,32 @@ namespace ConnectToDB.Examples
                 parameter.Value = "Princess";
 
                 command.Parameters.Add(parameter);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public static void ShowNullParameter()
+        {
+            var sqlExpression = @"update Characters set LastName = @lastName where FirstName = @firstName";
+
+            var connectionString = ConfigurationManager.ConnectionStrings["AdvanceCSharpCS"].ConnectionString;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(sqlExpression, connection);
+
+                SqlParameter parameterFirstName = new SqlParameter();
+                parameterFirstName.ParameterName = "@firstName";
+                parameterFirstName.Value = "Princess";
+
+                SqlParameter parameterLastName = new SqlParameter();
+                parameterLastName.ParameterName = "@lastName";
+                parameterLastName.Value = DBNull.Value;
+
+                command.Parameters.Add(parameterFirstName);
+                command.Parameters.Add(parameterLastName);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -60,7 +87,7 @@ namespace ConnectToDB.Examples
                 SqlParameter parameter = new SqlParameter();
                 parameter.ParameterName = "@gender";
                 parameter.SqlDbType = SqlDbType.Bit;
-                parameter.Value = 1;
+                parameter.Value = 0;
 
                 command.Parameters.Add(parameter);
 

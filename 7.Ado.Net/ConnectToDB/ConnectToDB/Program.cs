@@ -7,7 +7,7 @@ namespace ConnectToDB
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.ShowTransaction;
+            var exampleToRun = ExamplesEnumeration.ShowNullParameters;
 
             switch (exampleToRun)
             {
@@ -31,6 +31,9 @@ namespace ConnectToDB
                     break;
                 case ExamplesEnumeration.ShowParametersInCommand:
                     CommandWithParameters.ShowParameter();
+                    break;
+                case ExamplesEnumeration.ShowNullParameters:
+                    CommandWithParameters.ShowNullParameter();
                     break;
                 case ExamplesEnumeration.ShowMultipleParaters:
                     CommandWithParameters.MultipleParameters();
