@@ -13,5 +13,7 @@
         ShowMultipleParaters,
         ShowParatersType,
         ShowTransaction,
+        ShowReturnScopeIdentity,
+        ShowReturnScopeIdentityWithOutputParameter,
     }
 }

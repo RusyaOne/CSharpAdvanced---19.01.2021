@@ -7,7 +7,7 @@ namespace ConnectToDB
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.ShowNullParameters;
+            var exampleToRun = ExamplesEnumeration.ShowReturnScopeIdentity;
 
             switch (exampleToRun)
             {
@@ -43,6 +43,12 @@ namespace ConnectToDB
                     break;
                 case ExamplesEnumeration.ShowTransaction:
                     CommandWithTransaction.ShowTransaction();
+                    break;
+                case ExamplesEnumeration.ShowReturnScopeIdentity:
+                    CommandWithParameters.ReturnScopeIdentity();
+                    break;
+                case ExamplesEnumeration.ShowReturnScopeIdentityWithOutputParameter:
+                    CommandWithParameters.ReturnScopeIdentityWithOutputParameter();
                     break;
             }
         }
