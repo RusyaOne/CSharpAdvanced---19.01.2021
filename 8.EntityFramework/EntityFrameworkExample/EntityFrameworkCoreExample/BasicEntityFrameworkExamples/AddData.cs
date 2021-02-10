@@ -6,7 +6,7 @@ namespace EntityFrameworkCoreExample.BasicEntityFrameworkExamples
     {
         public static void AddCharactersToDb()
         {
-            var dbContext = new CSharpAdvancedContext();
+            var dbContext = new CharactersDbContext();
             var characters = CharactersRepository.GetCharacters();
             foreach (var character in characters)
             {

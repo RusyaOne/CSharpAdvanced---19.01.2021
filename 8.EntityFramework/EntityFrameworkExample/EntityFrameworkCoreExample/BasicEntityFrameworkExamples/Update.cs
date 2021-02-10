@@ -7,7 +7,7 @@ namespace EntityFrameworkCoreExample.BasicEntityFrameworkExamples
     {
         public static void UpdateCharacter()
         {
-            var dbContext = new CSharpAdvancedContext();            
+            var dbContext = new CharactersDbContext();            
             var character = dbContext.Characters.FirstOrDefault();
 
             character.FirstName = "Tom";
