@@ -7,7 +7,7 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.LeftJoinExtensionMethodsSyntax;
+            var exampleToRun = ExamplesEnumeration.LeftJoinQuerySyntax;
 
             switch (exampleToRun)
             {

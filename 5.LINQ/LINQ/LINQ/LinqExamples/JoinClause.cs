@@ -109,6 +109,20 @@ namespace LINQ.LinqExamples
                                  StoryName = story == null ? "No story" : story.Name
                              };
 
+            //Select Character, that only have an existing Story
+            //var joinResult = from characater in characters
+            //                 join story in stories
+            //                 on characater.StoryId equals story.Id
+            //                 select new Character
+            //                 {
+            //                     FirstName = characater.FirstName,
+            //                     LastName = characater.LastName,
+            //                     Gender = characater.Gender,
+            //                     StoryId = characater.StoryId,
+            //                     StoryName = characater.StoryName,
+            //                     Age = characater.Age
+            //                 };
+
             foreach (var item in joinResult)
             {
                 Console.WriteLine($"{item.FirstName}, {item.LastName}, {item.StoryName}");
