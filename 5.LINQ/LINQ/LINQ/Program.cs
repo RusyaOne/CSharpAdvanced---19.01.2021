@@ -7,7 +7,7 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.LeftJoinQuerySyntax;
+            var exampleToRun = ExamplesEnumeration.ExclusionWithWhere;
 
             switch (exampleToRun)
             {
@@ -79,6 +79,9 @@ namespace LINQ
                     break;
                 case ExamplesEnumeration.LeftJoinExtensionMethodsSyntax:
                     JoinClause.ShowLeftJoinExtensionMethodsSyntax();
+                    break;
+                case ExamplesEnumeration.ExclusionWithWhere:
+                    WhereClause.ShowExclusionWithWhere();
                     break;
             }
 

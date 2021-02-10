@@ -24,6 +24,7 @@
         JoinByMultipleFields,
         JoinByMultipleFieldsWithTuple,
         LeftJoinQuerySyntax,
-        LeftJoinExtensionMethodsSyntax
+        LeftJoinExtensionMethodsSyntax,
+        ExclusionWithWhere
     }
 }

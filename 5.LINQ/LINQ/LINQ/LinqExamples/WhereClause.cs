@@ -43,5 +43,16 @@ namespace LINQ.LinqExamples
         //Напишите сами LINQ запрос с оператором Where,
         //используя синтаксис методов расширения 
         //и используйте в выражении оба логических оператора && и || 
+
+        public static void ShowExclusionWithWhere()
+        {
+            var characters = CharactersRepository.GetCharacters();
+            var stories = StoriesRepository.GetStories();
+
+            var characterWithoutStory = characters.Where(x => !stories.Select(y => y.Id).Contains(x.StoryId));
+
+            foreach (var character in characterWithoutStory)
+                Console.WriteLine(character.ToString());
+        }
     }
 }
