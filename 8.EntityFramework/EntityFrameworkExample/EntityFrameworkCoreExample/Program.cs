@@ -7,7 +7,7 @@ namespace EntityFrameworkCoreExample
     {
         static void Main(string[] args)
         {            
-            var exampleToRun = ExamplesEnumeration.DeleteCharacter;
+            var exampleToRun = ExamplesEnumeration.GetCharactersFromDb;
 
             switch (exampleToRun)
             {
@@ -15,13 +15,16 @@ namespace EntityFrameworkCoreExample
                     AddData.AddCharactersToDb();
                     break;
                 case ExamplesEnumeration.GetCharactersFromDb:
-                    GetData.GetCharactersFromDb();
+                    GetData.GetDependentData();
                     break;
                 case ExamplesEnumeration.UpdateCharacter:
                     Update.UpdateCharacter();
                     break;
                 case ExamplesEnumeration.DeleteCharacter:
                     Delete.DeleteCharacter();
+                    break;
+                case ExamplesEnumeration.GetDependentData:
+                    GetData.GetDependentData();
                     break;
             }
 

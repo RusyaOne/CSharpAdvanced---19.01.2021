@@ -5,6 +5,7 @@
         AddCharactersToDb,
         GetCharactersFromDb,
         UpdateCharacter,
-        DeleteCharacter
+        DeleteCharacter,
+        GetDependentData
     }
 }

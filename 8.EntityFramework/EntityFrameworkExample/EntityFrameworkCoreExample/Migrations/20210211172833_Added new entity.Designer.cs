@@ -3,14 +3,16 @@ using EntityFrameworkCoreExample;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EntityFrameworkCoreExample.Migrations
 {
     [DbContext(typeof(CharactersDbContext))]
-    partial class CharactersDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210211172833_Added new entity")]
+    partial class Addednewentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,35 +47,6 @@ namespace EntityFrameworkCoreExample.Migrations
                     b.HasIndex("StoryId");
 
                     b.ToTable("Characters");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Age = 35,
-                            FirstName = "Harry",
-                            Gender = true,
-                            LastName = "Seldon",
-                            StoryId = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Age = 2700,
-                            FirstName = "Arven",
-                            Gender = false,
-                            LastName = "Undomiel",
-                            StoryId = 2
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Age = 14,
-                            FirstName = "Finn",
-                            Gender = true,
-                            LastName = "Mertens",
-                            StoryId = 3
-                        });
                 });
 
             modelBuilder.Entity("EntityFrameworkCoreExample.Models.Story", b =>
@@ -92,26 +65,6 @@ namespace EntityFrameworkCoreExample.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Stories");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Description = "",
-                            Name = "Foundation"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Description = "",
-                            Name = "LOTR"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "",
-                            Name = "Hyperion"
-                        });
                 });
 
             modelBuilder.Entity("EntityFrameworkCoreExample.Models.Character", b =>
