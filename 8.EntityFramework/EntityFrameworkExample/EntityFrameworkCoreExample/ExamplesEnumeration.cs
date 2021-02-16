@@ -6,6 +6,7 @@
         GetCharactersFromDb,
         UpdateCharacter,
         DeleteCharacter,
-        GetDependentData
+        GetDependentDataWithEagerLoading,
+        GetDependentDataWithLazyLoading,
     }
 }
