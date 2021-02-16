@@ -9,16 +9,23 @@ namespace EntityFrameworkCoreExample
     {
         public DbSet<Character> Characters { get; set; }
         public DbSet<Story> Stories { get; set; }
+        public DbSet<Author> Authors { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build();
 
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("CharactersConnectionString"));
+            optionsBuilder.UseSqlServer(configuration.GetConnectionString("CharactersConnectionString")).UseLazyLoadingProxies();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Author>().ToTable("Creators");
+            modelBuilder.Entity<Author>().Property(x => x.AuthorIdentifier).HasColumnName("CreatorId");
+            modelBuilder.Entity<Author>().Property(x => x.LastName).IsRequired();
+
+            modelBuilder.Entity<Author>().HasIndex(x => new { x.FirstName, x.LastName}).IsUnique();
+
             modelBuilder.Entity<Story>().HasData(
                 new Story { Id = 1, Name = "Foundation", Description = ""},
                 new Story { Id = 2, Name = "LOTR", Description = ""},

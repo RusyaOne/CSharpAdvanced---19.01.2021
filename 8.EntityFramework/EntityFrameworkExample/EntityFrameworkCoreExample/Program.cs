@@ -7,7 +7,7 @@ namespace EntityFrameworkCoreExample
     {
         static void Main(string[] args)
         {            
-            var exampleToRun = ExamplesEnumeration.GetDependentDataWithEagerLoading;
+            var exampleToRun = ExamplesEnumeration.GetDependentDataWithLazyLoading;
 
             switch (exampleToRun)
             {
@@ -22,6 +22,9 @@ namespace EntityFrameworkCoreExample
                     break;
                 case ExamplesEnumeration.DeleteCharacter:
                     Delete.DeleteCharacter();
+                    break;
+                case ExamplesEnumeration.GetDependentDataWithExplicitLoading:
+                    GetData.GetDependentDataWithExplicitLoading();
                     break;
                 case ExamplesEnumeration.GetDependentDataWithEagerLoading:
                     GetData.GetDependentDataWithEagerLoading();

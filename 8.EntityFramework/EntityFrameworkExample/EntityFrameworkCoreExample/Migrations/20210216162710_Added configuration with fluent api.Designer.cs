@@ -3,14 +3,16 @@ using EntityFrameworkCoreExample;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EntityFrameworkCoreExample.Migrations
 {
     [DbContext(typeof(CharactersDbContext))]
-    partial class CharactersDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210216162710_Added configuration with fluent api")]
+    partial class Addedconfigurationwithfluentapi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -27,17 +29,13 @@ namespace EntityFrameworkCoreExample.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("AuthorIdentifier");
-
-                    b.HasIndex("FirstName", "LastName")
-                        .IsUnique()
-                        .HasFilter("[FirstName] IS NOT NULL");
 
                     b.ToTable("Creators");
                 });

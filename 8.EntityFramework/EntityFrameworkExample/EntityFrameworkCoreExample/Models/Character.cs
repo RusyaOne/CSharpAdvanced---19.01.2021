@@ -9,6 +9,6 @@
         public int Age { get; set; }
 
         public int StoryId { get; set; }
-        public Story Story { get; set; }
+        public virtual Story Story { get; set; }
     }
 }

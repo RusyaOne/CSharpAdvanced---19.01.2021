@@ -3,14 +3,16 @@ using EntityFrameworkCoreExample;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EntityFrameworkCoreExample.Migrations
 {
     [DbContext(typeof(CharactersDbContext))]
-    partial class CharactersDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210216163514_Added unique index for model Authors")]
+    partial class AddeduniqueindexformodelAuthors
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,7 +39,7 @@ namespace EntityFrameworkCoreExample.Migrations
 
                     b.HasIndex("FirstName", "LastName")
                         .IsUnique()
-                        .HasFilter("[FirstName] IS NOT NULL");
+                        .HasFilter("[FirstName] IS NOT NULL AND [LastName] IS NOT NULL");
 
                     b.ToTable("Creators");
                 });

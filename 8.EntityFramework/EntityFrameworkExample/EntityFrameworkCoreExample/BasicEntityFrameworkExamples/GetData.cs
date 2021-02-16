@@ -15,6 +15,22 @@ namespace EntityFrameworkCoreExample.BasicEntityFrameworkExamples
                     $"\tLastName: {c.LastName}  \tGender: {c.Gender}  \tAge: {c.Age}");                     
         }
 
+        public static void GetDependentDataWithExplicitLoading()
+        {
+            var dbContext = new CharactersDbContext();
+            var characters = dbContext.Characters
+                .Select(x => 
+                    new
+                    {
+                        x.FirstName,
+                        x.LastName,
+                        StoryName = x.Story.Name
+                    });
+
+            foreach (var c in characters)
+                Console.WriteLine($"FirstName: {c.FirstName}  \tLastName: {c.LastName}  \tStory: {c.StoryName}");
+        }
+
         public static void GetDependentDataWithEagerLoading()
         {
             var dbContext = new CharactersDbContext();
