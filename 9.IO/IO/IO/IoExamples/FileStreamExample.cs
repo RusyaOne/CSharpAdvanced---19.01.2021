@@ -24,7 +24,7 @@ namespace IO.IoExamples
                 Console.WriteLine(stream.Position);
 
                 //Ставим каретку в начальную позицию
-                stream.Position = 0;
+                //stream.Position = 0;
 
                 for (int i = 0; i < 20; i++)                
                     Console.Write(" " + stream.ReadByte());

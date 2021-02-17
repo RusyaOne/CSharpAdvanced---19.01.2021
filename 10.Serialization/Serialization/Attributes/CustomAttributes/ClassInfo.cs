@@ -9,7 +9,7 @@ namespace Attributes.CustomAttributes
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class ClassInfo : Attribute
     {
-        public int Importance { get; set; } = 0;
+        private int _importance { get; set; } = 0;
 
         public string Description { get; set; }
 
@@ -19,7 +19,7 @@ namespace Attributes.CustomAttributes
 
         public ClassInfo(int importance)
         {
-            Importance = importance;
+            _importance = importance;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace IO.IoExamples
     {
         public static void ShowStreamWriter()
         {
-            var file = new FileInfo(@"D:\Lesson9Example\ShowFileInfo.txt");
+            var file = new FileInfo(@"D:\Courses\CSharpAdvanced - 19.01.2021\9.IO\IO\Lesson9Example\ShowFileInfo.txt");
 
             using (StreamWriter writer = file.CreateText())
             {

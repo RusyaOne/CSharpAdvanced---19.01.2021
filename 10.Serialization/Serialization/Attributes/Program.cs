@@ -12,7 +12,7 @@ namespace Attributes
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.ShowAttributesOnType;
+            var exampleToRun = ExamplesEnumeration.ShowTypeAttributes;
 
             switch (exampleToRun)
             {

@@ -11,7 +11,7 @@ namespace IO.IoExamples
     {
         public static void ShowDirectoryInfo()
         {
-            var directory = new DirectoryInfo(@"D:\Lesson9Example\ShowDirectoryInfo");
+            var directory = new DirectoryInfo(@"D:\Courses\CSharpAdvanced - 19.01.2021\9.IO\IO\Lesson9Example\ShowDirectoryInfo");
 
             if (directory.Exists) 
             {
@@ -36,7 +36,7 @@ namespace IO.IoExamples
 
         public static void CreateSubdirectory()
         {
-            var directory = new DirectoryInfo(@"D:\Lesson9Example\ShowDirectoryInfo");
+            var directory = new DirectoryInfo(@"D:\Courses\CSharpAdvanced - 19.01.2021\9.IO\IO\Lesson9Example\ShowDirectoryInfo");
 
             if (directory.Exists)
             {
@@ -46,13 +46,13 @@ namespace IO.IoExamples
                 //Рекурсивное создание подкаталога
                 directory.CreateSubdirectory(@"Recursive\SubDirectory");
 
-                Console.WriteLine("Directories are created");
+                Console.WriteLine("Directories were created");
             }
         }
 
         public static void DeleteDirectory()
         {
-            var directory = new DirectoryInfo(@"D:\Lesson9Example\ShowDirectoryInfo");
+            var directory = new DirectoryInfo(@"D:\Courses\CSharpAdvanced - 19.01.2021\9.IO\IO\Lesson9Example\ShowDirectoryInfo");
 
             if (directory.Exists)
             {
@@ -69,16 +69,16 @@ namespace IO.IoExamples
                 //Удаление каталога рекурсивно
                 directory.Delete(true);
 
-                Console.WriteLine("Directories are deleted");
+                Console.WriteLine("Directories were deleted");
             }
         }
 
         public static void DeleteAnyDirectory()
         {
             //Рекурсивно удаляем каталог
-            Directory.Delete(@"D:\Lesson9Example", true);
+            Directory.Delete(@"D:\Courses\CSharpAdvanced - 19.01.2021\9.IO\IO\Lesson9Example", true);
 
-            Console.WriteLine("Directories are deleted");            
+            Console.WriteLine("Directories were deleted");            
         }
     }
 }

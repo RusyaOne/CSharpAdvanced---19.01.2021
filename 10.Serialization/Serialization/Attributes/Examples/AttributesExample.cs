@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Attributes.Examples
 {
-    [Info("This is attributes example class", Importance = 4)]
+    [Info("This is attributes example class", Importance = 42)]
     public class AttributesExample
     {
         [Info("This is field")]

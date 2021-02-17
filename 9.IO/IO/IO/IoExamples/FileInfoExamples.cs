@@ -11,7 +11,7 @@ namespace IO.IoExamples
     {
         public static void ShowFileInfo()
         {
-            var fileInfo = new FileInfo(@"D:\Lesson9Example\ShowFileInfo.txt");
+            var fileInfo = new FileInfo(@"D:\Courses\CSharpAdvanced - 19.01.2021\9.IO\IO\Lesson9Example\ShowFileInfo.txt");
 
             if (!fileInfo.Exists)
             {
@@ -22,10 +22,9 @@ namespace IO.IoExamples
                 Console.WriteLine(fileInfo.FullName);
         }
 
-
         public static void ShowFilesInfo()
         {
-            var directory = new DirectoryInfo(@"D:\Lesson9Example");
+            var directory = new DirectoryInfo(@"D:\Courses\CSharpAdvanced - 19.01.2021\9.IO\IO\Lesson9Example");
 
             if (directory.Exists)
             {
@@ -55,7 +54,7 @@ namespace IO.IoExamples
 
         public static void DeleteFile()
         {
-            var file = new FileInfo(@"D:\Lesson9Example\ShowFileInfo.txt");
+            var file = new FileInfo(@"D:\Courses\CSharpAdvanced - 19.01.2021\9.IO\IO\Lesson9Example\ShowFileInfo.txt");
 
             file.Delete();
 
@@ -64,7 +63,7 @@ namespace IO.IoExamples
 
         public static void DeleteAnyFile()
         {
-            File.Delete(@"D:\Lesson9Example\ShowFileInfo.txt"); 
+            File.Delete(@"D:\Courses\CSharpAdvanced - 19.01.2021\9.IO\IO\Lesson9Example\ShowFileInfo.txt"); 
 
             Console.WriteLine("File was deleted");
         }
