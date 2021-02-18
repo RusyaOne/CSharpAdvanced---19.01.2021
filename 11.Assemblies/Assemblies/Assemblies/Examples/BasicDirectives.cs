@@ -15,7 +15,7 @@ namespace Assemblies.Examples
 #if example
             Console.WriteLine("Example directive is defined");
 #else
-            Console.WriteLine("Example directive is undefined");
+            Console.WriteLine("Example directive is not defined");
 #endif
         }
 

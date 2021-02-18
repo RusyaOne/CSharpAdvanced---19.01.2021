@@ -14,7 +14,7 @@ namespace Attributes.Examples
         private int quantity;
 
         [Info("This is property")]
-        public double Sum { get; set; }
+        public double Sum { get ; set; }
 
         [Info("This is method")]
         public double ShowResult()

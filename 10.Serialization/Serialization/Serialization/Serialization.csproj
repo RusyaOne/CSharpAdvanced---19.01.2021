@@ -39,6 +39,7 @@
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +52,7 @@
     <Compile Include="Examples\JsonDesirealization.cs" />
     <Compile Include="Examples\SaveToFile.cs" />
     <Compile Include="Examples\SimpleJsonSerizalization.cs" />
+    <Compile Include="Examples\XsdSerializationExample.cs" />
     <Compile Include="Models\Human.cs" />
     <Compile Include="Models\Ork.cs" />
     <Compile Include="Program.cs" />

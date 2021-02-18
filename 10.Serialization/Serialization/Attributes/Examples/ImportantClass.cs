@@ -10,7 +10,7 @@ namespace Attributes.Examples
     [ClassInfo(10)]
     public class ImportantClass
     {
-        //[ClassInfo]
+        //[ClassInfo(10)]
         public void ShowItsImportance()
         {
 

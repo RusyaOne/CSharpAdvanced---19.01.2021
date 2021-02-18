@@ -1,5 +1,5 @@
 ﻿using System;
-using static Usings.ExampleClasses.StaticClassExample;
+//using static Usings.ExampleClasses.StaticClassExample;
 using NonStatic = Usings.ExampleClasses.NonStaticClassExample;
 
 namespace Usings
@@ -10,7 +10,7 @@ namespace Usings
         {
             new NonStatic().DoSmth();
 
-            DoSmthStatic();
+            //DoSmthStatic();
         }
     }
 }

@@ -11,9 +11,7 @@ namespace Assemblies.Examples
     {
         public static void ShowGetConstructor()
         {
-            var type = typeof(Character);
-
-            var constructors = type.GetConstructors();
+            var constructors = typeof(Character).GetConstructors();
 
             foreach (var constructor in constructors)
             {
