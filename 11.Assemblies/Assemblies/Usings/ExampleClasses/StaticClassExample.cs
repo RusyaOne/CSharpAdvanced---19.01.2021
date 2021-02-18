@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShowDirectives.ExampleClasses
+namespace Usings.ExampleClasses
 {
     public static class StaticClassExample
     {

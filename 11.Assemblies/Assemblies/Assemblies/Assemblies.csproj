@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShowDirectives\ShowDirectives.csproj" />
+    <ProjectReference Include="..\Usings\Usings.csproj" />
   </ItemGroup>
 
 </Project>
