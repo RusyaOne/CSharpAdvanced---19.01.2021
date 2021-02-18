@@ -9,7 +9,7 @@ namespace Threads.Examples
 {
     public static class GlobalVariableExample
     {
-        //[ThreadStatic] 
+        [ThreadStatic] 
         private static int counter;
 
         public static void ShowGlobalVariable()
@@ -25,15 +25,15 @@ namespace Threads.Examples
         {
             if (counter < 10)
             {
-                counter++; 
+                counter++;
                 Console.WriteLine($"Counter: {counter} Thread {Thread.CurrentThread.ManagedThreadId} is started");
 
                 Thread thread = new Thread(CreateNewThreads);
                 thread.Start();
-                thread.Join();      
+                thread.Join();
             }
 
-            Console.WriteLine($"Thread {Thread.CurrentThread.GetHashCode()} is over");
+            Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId} is over");
         }
     }
 }

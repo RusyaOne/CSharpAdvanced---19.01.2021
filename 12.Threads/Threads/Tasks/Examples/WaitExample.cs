@@ -17,18 +17,10 @@ namespace Tasks.Examples
 
             Console.WriteLine("\ntask.IsCompleted = " + task.IsCompleted);
                         
-            // Option 1:
             task.Wait(); //Analogy of .Join()
-
-            // Option 2:
-            //while (!task.IsCompleted) 
-            //   Thread.Sleep(100);
-
 
             Console.WriteLine("\ntask.IsCompleted = " + task.IsCompleted);
         }
-
-
 
 
 
@@ -40,8 +32,8 @@ namespace Tasks.Examples
             task1.Start();
             task2.Start();
 
-            Task.WaitAll(task1, task2);
-            //Task.WaitAny(task1, task2);
+            //Task.WaitAll(task1, task2);
+            Task.WaitAny(task1, task2);
 
             Console.WriteLine("Main thread is over");
         }

@@ -29,6 +29,7 @@ namespace Threads.Examples
             //Creating ParameterizedThreadStart to launch method with parameters
             ParameterizedThreadStart threadDelegate = RunSecondThread;
             var secondThread = new Thread(threadDelegate);
+
             //secondThread.IsBackground = true; //Show ForeGroud priority
             secondThread.Start("2_");
             secondThread.Join();
@@ -43,7 +44,6 @@ namespace Threads.Examples
 
             //Launch from third thread
             thirdThread.Start("3_");
-
             thirdThread.Join();
 
             //Launch from second thread

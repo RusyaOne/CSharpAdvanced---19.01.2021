@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="ExamplesEnumeration.cs" />
     <Compile Include="Examples\IsBackgroupExample.cs" />
-    <Compile Include="Examples\MultipleParametersExample.cs" />
     <Compile Include="Examples\TaskContinuationExample.cs" />
     <Compile Include="Examples\TaskExample.cs" />
     <Compile Include="Examples\TaskFactoryExample.cs" />

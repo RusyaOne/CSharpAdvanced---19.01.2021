@@ -16,7 +16,6 @@ namespace Tasks
         WaitAllOrAny,
         TaskFactory,
         ContinueWith,
-        Result,
-        MultipleParameters,
+        Result
     }
 }

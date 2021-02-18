@@ -11,7 +11,7 @@ namespace Tasks
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.MultipleParameters;
+            var exampleToRun = ExamplesEnumeration.BasicTask;
 
             switch (exampleToRun)
             {
@@ -41,9 +41,6 @@ namespace Tasks
                     break;
                 case ExamplesEnumeration.Result:
                     TaskResultExample.ShowTaskResult();
-                    break;
-                case ExamplesEnumeration.MultipleParameters:
-                    MultipleParametersExample.ShowMultipleParameters();
                     break;
             }
 
