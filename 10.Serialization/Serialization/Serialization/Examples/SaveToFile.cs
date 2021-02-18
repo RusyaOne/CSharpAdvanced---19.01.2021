@@ -16,7 +16,7 @@ namespace Serialization.Examples
             human.Name = "Uther";
             human.Age = 42;
 
-            using (FileStream stream = new FileStream(@"D:\Lesson9Example\Human.txt", FileMode.OpenOrCreate))
+            using (FileStream stream = new FileStream(@"D:\Courses\CSharpAdvanced - 19.01.2021\11.Assemblies\Lesson9Example\Human.txt", FileMode.OpenOrCreate))
             {
                 JsonSerializer.SerializeAsync<Human>(stream, human);
             }
@@ -29,7 +29,7 @@ namespace Serialization.Examples
         {
             Human human;
 
-            using (FileStream stream = new FileStream(@"D:\Lesson9Example\Human.txt", FileMode.Open))
+            using (FileStream stream = new FileStream(@"D:\Courses\CSharpAdvanced - 19.01.2021\11.Assemblies\Lesson9Example\Human.txt", FileMode.Open))
             {
                 human = await JsonSerializer.DeserializeAsync<Human>(stream);
             }
