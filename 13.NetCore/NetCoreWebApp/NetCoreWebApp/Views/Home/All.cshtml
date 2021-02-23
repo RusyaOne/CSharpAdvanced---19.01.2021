@@ -1,0 +1,17 @@
+﻿<html>
+<head>
+    <title>All characters</title>
+</head>
+<body>
+    <table>
+        @foreach (var character in (ViewData["Characters"] as List<NetCoreWebApp.Models.Character>))
+        {
+            <tr>
+                <td>@character.FirstName</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
+
+
