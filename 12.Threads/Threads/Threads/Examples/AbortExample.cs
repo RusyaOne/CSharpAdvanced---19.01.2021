@@ -36,7 +36,7 @@ namespace Threads.Examples
                 Console.WriteLine("\n" + e.Message);
             }
 
-            Console.WriteLine($"\nThread {Thread.CurrentThread.GetHashCode()} is over");
+            Console.WriteLine($"\nThread {Thread.CurrentThread.ManagedThreadId} is over");
         }
     }
 }

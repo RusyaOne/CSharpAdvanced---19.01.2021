@@ -8,24 +8,24 @@ namespace AsyncAwait.Examples
 {
     public static class ReturnValueExample
     {
-        public static void ShowAsyncAwait()
+        public static async void ShowAsyncAwait()
         {
-            RunOperationAsync();
+            await RunOperationAsync();
 
             Console.WriteLine("Main finished");
         }
 
-        private static async void RunOperationAsync()
+        private static async Task RunOperationAsync()
         {
-            Console.WriteLine("ShowAsyncAwait started"); //This part runs syncronously
-            int sum = await Task<int>.Run(() => Sum(1, 2)); //This part runs asyncronously
+            Console.WriteLine("ShowAsyncAwait started");
+            int sum = await Sum(4, 5);
             Console.WriteLine($"ShowAsyncAwait finished. Sum: {sum}");
         }
 
-        private static int Sum(int x, int y)
+        private static async Task<int> Sum(int x, int y)
         {
-            return x + y;
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            return  x + y;
         }
-
     }
 }

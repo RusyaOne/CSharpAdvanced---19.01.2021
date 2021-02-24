@@ -12,7 +12,7 @@ namespace AsyncDelegates.Examples
     {
         public static void ShowAsyncAction()
         {
-            Action myDelegate = new Action(WriteChar);
+            Action myDelegate = new Action(WriteThreadNumber);
 
             //Invoke delagate asynchronously
             myDelegate.BeginInvoke(null, null); 
@@ -26,7 +26,7 @@ namespace AsyncDelegates.Examples
 
         public static void ShowEndInvoke()
         {
-            Action myDelegate = new Action(WriteChar);
+            Action myDelegate = new Action(WriteThreadNumber);
 
             //Invoke delagate asynchronously
             IAsyncResult result = myDelegate.BeginInvoke(null, null);

@@ -25,7 +25,7 @@ namespace Threads.Examples
             for (int i = 0; i < 100; i++)
             {
                 Thread.Sleep(20);
-                Console.Write('*');
+                Console.Write(threadId);
             }
 
             Console.WriteLine("\nMain thread is over.");
@@ -36,10 +36,10 @@ namespace Threads.Examples
             var threadId = Thread.CurrentThread.ManagedThreadId;
             Console.WriteLine($"Thread Id: {threadId}");
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 1000; i++)
             {
                 Thread.Sleep(20);
-                Console.Write('.');
+                Console.Write(threadId);
             }
 
             Console.WriteLine($"\nThread {threadId} is over.");

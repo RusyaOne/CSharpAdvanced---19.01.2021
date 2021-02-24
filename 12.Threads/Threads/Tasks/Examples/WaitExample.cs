@@ -12,7 +12,7 @@ namespace Tasks.Examples
     {
         public static void ShowWaitTask()
         {
-            Task task = new Task(WriteChar);
+            Task task = new Task(WriteThreadNumber);
             task.Start();
 
             Console.WriteLine("\ntask.IsCompleted = " + task.IsCompleted);

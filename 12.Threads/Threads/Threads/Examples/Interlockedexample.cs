@@ -19,7 +19,7 @@ namespace Threads.Examples
             Thread[] threads = new Thread[10];
 
             for (int i = 0; i < 10; ++i)
-                (threads[i] = new Thread(MethodWithLock)).Start(); //ChangeMethods
+                (threads[i] = new Thread(MethodWitInterlock)).Start(); //ChangeMethods
 
             for (int i = 0; i < 10; ++i)
                 threads[i].Join();

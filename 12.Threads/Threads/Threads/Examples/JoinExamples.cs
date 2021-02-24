@@ -12,14 +12,14 @@ namespace Threads.Examples
     {
         public static void ShowJoin()
         {
-            Thread thread = new Thread(WriteChar); //No expicit ThreadStart
+            Thread thread = new Thread(WriteThreadNumber); //No expicit ThreadStart
             thread.Start();
 
             //Wait for secondary thread to finish
             thread.Join();
 
             //Launch function in main thread
-            WriteChar();
+            WriteThreadNumber();
         }
 
 
@@ -32,7 +32,7 @@ namespace Threads.Examples
 
             //secondThread.IsBackground = true; //Show ForeGroud priority
             secondThread.Start("2_");
-            secondThread.Join();
+            //secondThread.Join();
 
             //Launch from main thread
             WriteAnyChar("1_");
@@ -44,7 +44,7 @@ namespace Threads.Examples
 
             //Launch from third thread
             thirdThread.Start("3_");
-            thirdThread.Join();
+            //thirdThread.Join();
 
             //Launch from second thread
             WriteAnyChar(charToWrite);

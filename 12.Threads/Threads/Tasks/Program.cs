@@ -11,7 +11,7 @@ namespace Tasks
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.BasicTask;
+            var exampleToRun = ExamplesEnumeration.Result;
 
             switch (exampleToRun)
             {

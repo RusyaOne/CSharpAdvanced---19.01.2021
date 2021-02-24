@@ -37,12 +37,12 @@ namespace Threads.Examples
         private static void Report()
         {
             Thread.Sleep(200);
-            int availableWorkThreads, availableIOThreads, maxWorkThreads, maxIOThreads;
-            ThreadPool.GetAvailableThreads(out availableWorkThreads, out availableIOThreads);
-            ThreadPool.GetMaxThreads(out maxWorkThreads, out maxIOThreads);
+            int availableWorkThreads, availableIoThreads, maxWorkThreads, maxIoThreads;
+            ThreadPool.GetAvailableThreads(out availableWorkThreads, out availableIoThreads);
+            ThreadPool.GetMaxThreads(out maxWorkThreads, out maxIoThreads);
 
             Console.WriteLine("Available thread in pool    :{0} from {1}", availableWorkThreads, maxWorkThreads);
-            Console.WriteLine("Available IO thread in pool :{0} from  {1}\n", availableIOThreads, maxIOThreads);
+            Console.WriteLine("Available IO thread in pool :{0} from  {1}\n", availableIoThreads, maxIoThreads);
         }
     }
 }

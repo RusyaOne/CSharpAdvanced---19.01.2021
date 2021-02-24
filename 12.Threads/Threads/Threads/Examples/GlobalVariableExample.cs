@@ -9,8 +9,8 @@ namespace Threads.Examples
 {
     public static class GlobalVariableExample
     {
-        [ThreadStatic] 
-        private static int counter;
+        [ThreadStatic]
+        private static int counter = 0;
 
         public static void ShowGlobalVariable()
         {

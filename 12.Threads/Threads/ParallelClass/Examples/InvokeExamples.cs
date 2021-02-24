@@ -23,7 +23,7 @@ namespace ParallelClass.Examples
         {
             ParallelOptions options = new ParallelOptions();
 
-            options.MaxDegreeOfParallelism = 4;
+            options.MaxDegreeOfParallelism = 2;
 
             Console.WriteLine("Logical CPUs:" + Environment.ProcessorCount);
 

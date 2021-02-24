@@ -9,7 +9,7 @@ namespace Threads.Services
 {
     public static class ThreadsService
     {
-        public static void WriteChar()
+        public static void WriteThreadNumber()
         {
             var threadId = Thread.CurrentThread.ManagedThreadId;
             Console.WriteLine($"Thread Id: {threadId}");
@@ -17,7 +17,7 @@ namespace Threads.Services
             for (int i = 0; i < 100; i++)
             {
                 Thread.Sleep(50);
-                Console.Write(threadId == 1 ? '*' : '.');
+                Console.Write(threadId);
             }
 
             Console.WriteLine($"\nThread {threadId} is over");
@@ -28,9 +28,9 @@ namespace Threads.Services
             var threadId = Thread.CurrentThread.ManagedThreadId;
             Console.WriteLine($"Thread {threadId} is started");
 
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < 100; i++)
             {
-                Thread.Sleep(200);
+                Thread.Sleep(50);
                 Console.Write(charToWrite?.ToString());
             }
 

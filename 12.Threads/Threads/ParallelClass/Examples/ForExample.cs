@@ -20,8 +20,10 @@ namespace ParallelClass.Examples
                 data[i] = i * i * i * i/ 100000;
             timer.Stop();
 
-            Console.WriteLine("Initializing with regular cycle: " + timer.ElapsedTicks);
+            Console.WriteLine("Initializing with regular cycle: " + timer.ElapsedMilliseconds);
             timer.Reset();
+
+
 
             Action<int> transform = (int i) => { data[i] = i * i * i * i/ 100000; };
 
@@ -29,7 +31,7 @@ namespace ParallelClass.Examples
             Parallel.For(0, data.Length, transform);
             timer.Stop();
 
-            Console.WriteLine("Initializing with Parallel cycle: " + timer.ElapsedTicks);
+            Console.WriteLine("Initializing with Parallel cycle: " + timer.ElapsedMilliseconds);
 
             Console.WriteLine("Main thread is over");
         }

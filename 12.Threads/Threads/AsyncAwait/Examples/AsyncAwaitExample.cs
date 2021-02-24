@@ -9,23 +9,25 @@ namespace AsyncAwait.Examples
 {
     public static class AsyncAwaitExample
     {
-        public static void ShowAsyncAwait()
+        public static async void ShowAsyncAwait()
         {
-            RunOperationAsync();  
-
+            Console.WriteLine("Main started");
+            await RunOperationAsync();  
             Console.WriteLine("Main finished");
         }
 
-        private static async void RunOperationAsync()
+        private static async Task RunOperationAsync()
         {
-            Console.WriteLine("ShowAsyncAwait started"); //This part runs syncronously
-            await Task.Run(() => { SomeOperation(); }); //This part runs asyncronously
+            Console.WriteLine("ShowAsyncAwait started");
+            await SomeOperation();
             Console.WriteLine("ShowAsyncAwait finished"); 
         }
 
-        private static void SomeOperation()
+        private static async Task SomeOperation()
         {
-            Thread.Sleep(3000);
+            Console.WriteLine("SomeOperation started");
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            Console.WriteLine("SomeOperation finished");
         }
     }
 }

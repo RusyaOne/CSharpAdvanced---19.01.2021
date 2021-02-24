@@ -12,7 +12,7 @@ namespace Tasks.Examples
         public static void ShowTaskFactory()
         {
             //Task is already started, no need to invoke thread.Start()
-            Task task = Task.Factory.StartNew(WriteChar);
+            Task task = Task.Factory.StartNew(WriteThreadNumber);
             
             //TaskFactory factory = new TaskFactory();
             //Task task = factory.StartNew(MyTask);

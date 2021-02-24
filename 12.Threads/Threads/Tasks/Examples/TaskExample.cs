@@ -12,12 +12,12 @@ namespace Tasks.Examples
     {
         public static void ShowTask()
         {
-            Action action = WriteChar;
+            Action action = WriteThreadNumber;
 
-            Task task = new Task(action);   
+            Task task = new Task(action);
             task.Start();
 
-            WriteChar();
+            WriteThreadNumber();
         }
 
         public static void ShowTaskWithParameters()
@@ -27,12 +27,12 @@ namespace Tasks.Examples
             Task task = new Task(action, "9");
             task.Start();
 
-            WriteChar();
+            WriteThreadNumber();
         }
 
         public static void ShowTaskStatus()
         {
-            Task task = new Task(WriteChar);
+            Task task = new Task(WriteThreadNumber);
             Console.WriteLine("1. " + task.Status); 
 
             task.Start();
