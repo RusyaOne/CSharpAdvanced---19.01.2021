@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="ExamplesEnumeration.cs" />
     <Compile Include="Examples\AsyncAwaitExample.cs" />
+    <Compile Include="Examples\AsyncVsTask.cs" />
+    <Compile Include="Examples\MakeBreakfastAsync.cs" />
     <Compile Include="Examples\ReturnValueExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

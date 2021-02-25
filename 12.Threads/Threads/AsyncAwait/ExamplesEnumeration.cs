@@ -9,6 +9,8 @@ namespace AsyncAwait
     public enum ExamplesEnumeration
     {
         AsyncAwait,
-        ReturnValue
+        ReturnValue,
+        MakeBreakfastAsync,
+        AsyncVsTask
     }
 }

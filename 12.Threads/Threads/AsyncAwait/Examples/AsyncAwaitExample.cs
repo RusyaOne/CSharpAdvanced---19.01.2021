@@ -11,16 +11,16 @@ namespace AsyncAwait.Examples
     {
         public static async void ShowAsyncAwait()
         {
-            Console.WriteLine("Main started");
+            Console.WriteLine("ShowAsyncAwait started");
             await RunOperationAsync();  
-            Console.WriteLine("Main finished");
+            Console.WriteLine("ShowAsyncAwait finished");
         }
 
         private static async Task RunOperationAsync()
         {
-            Console.WriteLine("ShowAsyncAwait started");
+            Console.WriteLine("RunOperationAsync started");
             await SomeOperation();
-            Console.WriteLine("ShowAsyncAwait finished"); 
+            Console.WriteLine("RunOperationAsync finished"); 
         }
 
         private static async Task SomeOperation()

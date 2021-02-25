@@ -11,7 +11,7 @@ namespace Threads
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.SecondThread;
+            var exampleToRun = ExamplesEnumeration.ThreadPoolWithParameter;
 
             switch (exampleToRun)
             {
@@ -39,9 +39,12 @@ namespace Threads
                 case ExamplesEnumeration.ThreadPool:
                     ThreadPoolExample.ShowThreadPool();
                     break;
+                case ExamplesEnumeration.ThreadPoolWithParameter:
+                    ThreadPoolExample.ShowThreadPoolWithParameters();
+                    break;
             }
 
-            //Console.Read();
+            Console.Read();
         }
     }
 }

@@ -1,9 +1,5 @@
 ﻿using AsyncAwait.Examples;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AsyncAwait
 {
@@ -11,7 +7,7 @@ namespace AsyncAwait
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.ReturnValue;
+            var exampleToRun = ExamplesEnumeration.AsyncVsTask;
 
             switch (exampleToRun)
             {
@@ -21,8 +17,15 @@ namespace AsyncAwait
                 case ExamplesEnumeration.ReturnValue:
                     ReturnValueExample.ShowAsyncAwait();
                     break;
+                case ExamplesEnumeration.MakeBreakfastAsync:
+                    MakeBreakfastAsync.MakeBreakfast();
+                    break;
+                case ExamplesEnumeration.AsyncVsTask:
+                    AsyncVsTask.ShowAsyncVsTask();
+                    break;
             }
 
+            Console.WriteLine("Main is finished");
             Console.Read();
         }
     }

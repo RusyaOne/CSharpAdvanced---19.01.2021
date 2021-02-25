@@ -16,5 +16,6 @@ namespace Threads
         Monitor,
         Interlocked,
         ThreadPool,
+        ThreadPoolWithParameter
     }
 }

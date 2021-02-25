@@ -44,5 +44,18 @@ namespace Threads.Examples
             Console.WriteLine("Available thread in pool    :{0} from {1}", availableWorkThreads, maxWorkThreads);
             Console.WriteLine("Available IO thread in pool :{0} from  {1}\n", availableIoThreads, maxIoThreads);
         }
+
+
+
+        public static void ShowThreadPoolWithParameters()
+        {
+            ThreadPool.QueueUserWorkItem(SomeTaskWithParameters, "example");
+        }
+
+        private static void SomeTaskWithParameters(Object state)
+        {
+            Console.WriteLine($"Parameter value is {state}");
+            Thread.Sleep(2000);
+        }
     }
 }
