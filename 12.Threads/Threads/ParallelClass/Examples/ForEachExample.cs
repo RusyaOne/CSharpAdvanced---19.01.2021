@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ParallelClass.Examples
@@ -11,36 +9,37 @@ namespace ParallelClass.Examples
     {
         public static void ShowForEach()
         {
+            //Creating new collection
             List<int> data = new List<int>();
 
-            for (int i = 0; i < 40000000; i++)
+            for (int i = 0; i < 100000000; i++)
                 data.Add(i);
 
             Stopwatch timer = new Stopwatch();
 
+            //Performing calculations in simple foreach
             timer.Start();
-            for (int i = 0; i < data.Count; i++)
-                data[i] = data[i] * data[i] * data[i] * data[i] / 100000;
+            foreach (var i in data)            
+                PerformUselessCalcucation(i);            
             timer.Stop();
 
             Console.WriteLine("Initializing with regular cycle: " + timer.ElapsedMilliseconds);
             timer.Reset();
 
 
-
-
-
-            Action<int> transform = (int i) => { data[i] = i * i * i * i / 100000; };
-
+            //Performing calculations in parallel foreach
             timer.Start();
-            Parallel.ForEach(data, x => x = x * x * x * x / 100000);
+            Parallel.ForEach(data, x => PerformUselessCalcucation(x));
             timer.Stop();
 
             Console.WriteLine("Initializing with Parallel cycle: " + timer.ElapsedMilliseconds);
 
-            Console.WriteLine("Main thread is over");
 
-            Console.Read();
+
+            void PerformUselessCalcucation(int x)
+            {
+                var uselessVariable = x * x * x * x / 100000;
+            }
         }
     }
 }
