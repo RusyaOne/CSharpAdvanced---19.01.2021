@@ -16,6 +16,7 @@ namespace Tasks
         WaitAllOrAny,
         TaskFactory,
         ContinueWith,
-        Result
+        Result,
+        Cancellation
     }
 }

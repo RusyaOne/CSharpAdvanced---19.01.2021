@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tasks.Examples;
 
 namespace Tasks
@@ -11,7 +7,7 @@ namespace Tasks
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.Result;
+            var exampleToRun = ExamplesEnumeration.Cancellation;
 
             switch (exampleToRun)
             {
@@ -41,6 +37,9 @@ namespace Tasks
                     break;
                 case ExamplesEnumeration.Result:
                     TaskResultExample.ShowTaskResult();
+                    break;
+                case ExamplesEnumeration.Cancellation:
+                    CancellationExample.ShowCancellation();
                     break;
             }
 
