@@ -11,7 +11,7 @@ namespace ParallelClass
     {
         static void Main(string[] args)
         {
-            var exampleToRun = ExamplesEnumeration.ForEach;
+            var exampleToRun = ExamplesEnumeration.ParallelLinq;
 
             switch (exampleToRun)
             {
