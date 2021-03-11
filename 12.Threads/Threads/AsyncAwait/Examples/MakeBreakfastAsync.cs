@@ -27,9 +27,10 @@ namespace AsyncAwait.Examples
         private static async Task CookOatmeal()
         {
             await Task.Delay(TimeSpan.FromSeconds(20));
+            GetFromPackage();
+            WashOatmeal();
             Console.WriteLine("Oatmeal is ready");
         }
-
 
         private static async Task BoilEggs()
         {
@@ -41,6 +42,21 @@ namespace AsyncAwait.Examples
         {
             await Task.Delay(TimeSpan.FromSeconds(10));
             Console.WriteLine("Salad is ready");
+        }
+
+
+
+
+        private static void GetFromPackage()
+        {
+            Thread.Sleep(TimeSpan.FromSeconds(1));
+            Console.WriteLine("Got from package");
+        }
+
+        private static void WashOatmeal()
+        {
+            Thread.Sleep(TimeSpan.FromSeconds(1));
+            Console.WriteLine("Oatmeal is washed");
         }
     }
 }

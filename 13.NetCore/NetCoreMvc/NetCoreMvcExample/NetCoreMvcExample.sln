@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMvcExample", "NetCoreMvcExample\NetCoreMvcExample.csproj", "{D062B93A-FC82-4ED5-869B-7D1FA0741964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMvcExampleTests", "NetCoreMvcExampleTests\NetCoreMvcExampleTests.csproj", "{4DB02AA5-0C33-40DF-8C02-A03AE2D6AB7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D062B93A-FC82-4ED5-869B-7D1FA0741964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D062B93A-FC82-4ED5-869B-7D1FA0741964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D062B93A-FC82-4ED5-869B-7D1FA0741964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D062B93A-FC82-4ED5-869B-7D1FA0741964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DB02AA5-0C33-40DF-8C02-A03AE2D6AB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB02AA5-0C33-40DF-8C02-A03AE2D6AB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB02AA5-0C33-40DF-8C02-A03AE2D6AB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB02AA5-0C33-40DF-8C02-A03AE2D6AB7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3644695-9DF7-48A8-9BE3-9648A47AF27C}
+	EndGlobalSection
+EndGlobal

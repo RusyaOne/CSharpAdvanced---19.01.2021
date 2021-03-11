@@ -1,0 +1,1 @@
+{"Id":0,"FirstName":"Finn","LastName":"Mertens","Gender":true,"Age":14,"StoryId":1,"StoryName":"Fairytail of the lost needle"}

@@ -7,10 +7,10 @@ namespace CalculatorTests
     public class BasicOperationsTests
     {
         [Theory]
+        [InlineData(1, 4, 5)]
+        [InlineData(-1, 8, 7)]
         [InlineData(4, 5, 9)]
-        [InlineData(1, 3, 4)]
-        [InlineData(-1, 53, 52)]
-        public void Add_AddTwoIntegers_ResultIsCorrect(int firstNumber, int secondNumber, int expected)
+        public void Add_AddTwoIntegers_ResultIsEqualToSumOfIntegers(int firstNumber, int secondNumber, int expected)
         {
             //Arrange
             BasicOperations basicOperations = new BasicOperations();
